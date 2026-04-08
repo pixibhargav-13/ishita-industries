@@ -1,0 +1,232 @@
+.site-header {
+  padding-top: clamp(0.85rem, 1.5vw, 1.25rem);
+}
+
+.nav-shell {
+  max-width: 1210px;
+  padding-inline: clamp(0.85rem, 2.8vw, 1.5rem);
+}
+
+.brand-wrap {
+  gap: 0.45rem;
+  color: #1f1f22;
+  text-decoration: none;
+}
+
+.brand-mark {
+  width: 34px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.brand-copy {
+  line-height: 1;
+}
+
+.brand-title {
+  font-size: 2.05rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.brand-subtitle {
+  margin-left: 0.23rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.brand-tagline {
+  margin-top: 0.18rem;
+  font-size: 0.62rem;
+  font-weight: 500;
+  color: #54565a;
+}
+
+.nav-links-list {
+  gap: clamp(0.6rem, 2.5vw, 2.2rem);
+}
+
+.nav-link {
+  padding: 0.2rem 0.4rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #3b3d41;
+}
+
+.nav-link:hover {
+  color: #212327;
+}
+
+.nav-actions {
+  gap: 0.8rem;
+}
+
+.icon-button,
+.brochure-btn,
+.menu-btn {
+  background: transparent;
+  border: 0;
+  color: #3d3f43;
+  font-size: 1rem;
+}
+
+.icon-button {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+}
+
+.icon-globe {
+  font-size: 1.15rem;
+}
+
+.brochure-btn {
+  border: 1px solid #5f6165;
+  min-height: 43px;
+  padding: 0.5rem 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 1.95rem;
+  line-height: 1;
+}
+
+.brochure-icon {
+  font-size: 1.1rem;
+}
+
+.menu-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.9rem;
+  line-height: 1;
+}
+
+.menu-icon {
+  font-size: 1.3rem;
+}
+
+.nav-toggle-btn {
+  padding: 0;
+}
+
+.nav-toggler-icon {
+  background-image: none;
+  width: 28px;
+  height: 22px;
+  display: inline-block;
+  position: relative;
+}
+
+.nav-toggler-icon::before,
+.nav-toggler-icon::after,
+.nav-toggler-icon {
+  border-top: 2px solid #2e3034;
+}
+
+.nav-toggler-icon::before,
+.nav-toggler-icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 28px;
+}
+
+.nav-toggler-icon::before {
+  top: 7px;
+}
+
+.nav-toggler-icon::after {
+  top: 16px;
+}
+
+@media (max-width: 1199.98px) {
+  .brand-title {
+    font-size: 1.55rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .brand-tagline {
+    font-size: 0.56rem;
+  }
+
+  .nav-link {
+    font-size: 0.93rem;
+  }
+
+  .brochure-btn,
+  .menu-btn {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .site-header {
+    padding-top: 0.7rem;
+  }
+
+  .nav-shell {
+    align-items: flex-start;
+  }
+
+  .navbar-collapse {
+    width: 100%;
+    margin-top: 0.85rem;
+    border-top: 1px solid #d7d7da;
+    padding-top: 0.8rem;
+  }
+
+  .nav-links-list {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    gap: 0.2rem;
+  }
+
+  .nav-link {
+    padding-inline: 0;
+  }
+
+  .nav-actions {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    padding-bottom: 0.3rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .brand-mark {
+    width: 26px;
+    height: 34px;
+  }
+
+  .brand-title {
+    font-size: 1.2rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.74rem;
+  }
+
+  .brand-tagline {
+    font-size: 0.5rem;
+  }
+
+  .icon-button {
+    width: 32px;
+    height: 32px;
+  }
+
+  .brochure-btn,
+  .menu-btn {
+    min-height: 38px;
+    font-size: 0.9rem;
+  }
+}
