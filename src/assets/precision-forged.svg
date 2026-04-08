@@ -1,0 +1,40 @@
+<svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8A5A0A"/>
+      <stop offset="0.28" stop-color="#EFC86A"/>
+      <stop offset="0.52" stop-color="#FFF3BE"/>
+      <stop offset="0.78" stop-color="#B87810"/>
+      <stop offset="1" stop-color="#7A4C08"/>
+    </linearGradient>
+    <linearGradient id="redA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B81412"/>
+      <stop offset="0.55" stop-color="#FF6E5E"/>
+      <stop offset="1" stop-color="#A00E0D"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#7b4d0a" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)" transform="translate(30 50)">
+    <rect x="14" y="36" width="60" height="26" rx="12" fill="url(#goldA)" transform="rotate(-18 14 36)"/>
+    <circle cx="26" cy="49" r="7" fill="#FFF7D4"/>
+    <rect x="78" y="28" width="20" height="42" rx="8" fill="url(#goldA)"/>
+    <circle cx="88" cy="35" r="5" fill="#FFF7D4"/>
+    <rect x="132" y="34" width="58" height="24" rx="12" fill="url(#goldA)" transform="rotate(18 132 34)"/>
+    <circle cx="182" cy="50" r="7" fill="#FFF7D4"/>
+    <rect x="32" y="110" width="46" height="24" rx="12" fill="url(#goldA)"/>
+    <rect x="88" y="108" width="68" height="26" rx="12" fill="url(#goldA)" transform="rotate(-18 88 108)"/>
+    <rect x="152" y="96" width="72" height="24" rx="12" fill="url(#goldA)" transform="rotate(20 152 96)"/>
+    <rect x="218" y="112" width="30" height="20" rx="10" fill="url(#goldA)"/>
+    <circle cx="233" cy="122" r="5" fill="#FFF7D4"/>
+    <rect x="24" y="146" width="44" height="32" rx="10" fill="url(#goldA)"/>
+    <rect x="12" y="150" width="60" height="8" rx="4" fill="url(#redA)"/>
+    <rect x="82" y="156" width="78" height="20" rx="10" fill="url(#goldA)" transform="rotate(12 82 156)"/>
+    <rect x="162" y="168" width="42" height="18" rx="9" fill="url(#redA)" transform="rotate(-8 162 168)"/>
+    <rect x="198" y="154" width="48" height="22" rx="11" fill="url(#goldA)" transform="rotate(-16 198 154)"/>
+    <circle cx="110" cy="80" r="11" fill="url(#goldA)"/>
+    <circle cx="150" cy="78" r="8" fill="url(#goldA)"/>
+    <circle cx="210" cy="80" r="10" fill="url(#goldA)"/>
+  </g>
+</svg>

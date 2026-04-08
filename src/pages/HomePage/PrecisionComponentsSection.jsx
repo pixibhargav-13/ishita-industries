@@ -1,0 +1,74 @@
+import './PrecisionComponentsSection.css'
+import turnedImage from '../../assets/precision-turned.svg'
+import forgedImage from '../../assets/precision-forged.svg'
+import millingImage from '../../assets/precision-milling.svg'
+import broachImage from '../../assets/precision-broach.svg'
+import stampingImage from '../../assets/precision-stamping.svg'
+import castingImage from '../../assets/precision-casting.svg'
+
+const componentCards = [
+  {
+    title: 'Brass Turned component',
+    image: turnedImage,
+  },
+  {
+    title: 'Brass Forged component',
+    image: forgedImage,
+  },
+  {
+    title: 'Brass Milling component',
+    image: millingImage,
+  },
+  {
+    title: 'Brass Broach component',
+    image: broachImage,
+  },
+  {
+    title: 'Brass Stamping component',
+    image: stampingImage,
+  },
+  {
+    title: 'Brass Casting component',
+    image: castingImage,
+  },
+]
+
+function PrecisionComponentsSection() {
+  return (
+    <section className="precision-components-section">
+      <div className="container precision-components-shell">
+        <div className="precision-components-header">
+          <div>
+            <p className="precision-components-kicker mb-0">ALL KINDS OF PRECISION</p>
+            <h2 className="precision-components-title mb-0">
+              PRECISION MACHINING
+              <span className="d-block">EXPERTISE.</span>
+            </h2>
+          </div>
+          <p className="precision-components-intro mb-0">
+            We work with MS, SS, Copper, Bronze, Brass, and Aluminium.
+          </p>
+        </div>
+
+        <div className="precision-components-grid">
+          {componentCards.map((card) => (
+            <article key={card.title} className="precision-components-card">
+              <div className="precision-components-visual">
+                <img src={card.image} alt="" className="precision-components-image" />
+              </div>
+
+              <div className="precision-components-caption-row">
+                <p className="precision-components-caption mb-0">{card.title}</p>
+                <span className="precision-components-arrow" aria-hidden="true">
+                  &#8599;
+                </span>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default PrecisionComponentsSection

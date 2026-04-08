@@ -1,5 +1,6 @@
 .capabilities-section {
   padding: clamp(2.6rem, 5vw, 4.5rem) 0 clamp(2.8rem, 5.2vw, 4.8rem);
+  background-color: #F9F9F9 !important;
 }
 
 .capabilities-shell {
@@ -250,7 +251,7 @@
 .cap-card-metals {
   min-height: 172px;
   padding: 1rem 1.1rem 1.15rem;
-  background: #edf2f5;
+  background: #E4E9EA !important;
 }
 
 .cap-card-section-label {

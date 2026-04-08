@@ -1,0 +1,38 @@
+<svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="silverA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#626972"/>
+      <stop offset="0.3" stop-color="#D4D9DE"/>
+      <stop offset="0.54" stop-color="#FFFFFF"/>
+      <stop offset="0.8" stop-color="#939AA3"/>
+      <stop offset="1" stop-color="#565C64"/>
+    </linearGradient>
+    <linearGradient id="goldA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8A5A0A"/>
+      <stop offset="0.28" stop-color="#EFC86A"/>
+      <stop offset="0.52" stop-color="#FFF3BE"/>
+      <stop offset="0.78" stop-color="#B87810"/>
+      <stop offset="1" stop-color="#7A4C08"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#5a5f66" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)" transform="translate(28 54)">
+    <circle cx="32" cy="26" r="16" fill="url(#goldA)"/><circle cx="32" cy="26" r="7" fill="#FFF7D4"/>
+    <circle cx="78" cy="20" r="18" fill="url(#goldA)"/><circle cx="78" cy="20" r="8" fill="#FFF7D4"/>
+    <rect x="112" y="10" width="24" height="34" rx="8" fill="url(#goldA)"/>
+    <rect x="150" y="6" width="42" height="32" rx="10" fill="url(#goldA)" transform="rotate(18 150 6)"/>
+    <rect x="204" y="16" width="26" height="26" rx="8" fill="url(#goldA)"/>
+    <circle cx="24" cy="94" r="16" fill="url(#goldA)"/><circle cx="24" cy="94" r="7" fill="#FFF7D4"/>
+    <rect x="50" y="88" width="42" height="24" rx="8" fill="url(#silverA)" transform="rotate(-8 50 88)"/>
+    <rect x="100" y="86" width="54" height="26" rx="11" fill="url(#goldA)" transform="rotate(-24 100 86)"/>
+    <circle cx="170" cy="92" r="10" fill="url(#goldA)"/><circle cx="170" cy="92" r="4" fill="#FFF7D4"/>
+    <rect x="192" y="82" width="46" height="30" rx="10" fill="url(#goldA)"/>
+    <circle cx="54" cy="150" r="16" fill="url(#goldA)"/><circle cx="54" cy="150" r="8" fill="#FFF7D4"/>
+    <circle cx="98" cy="150" r="15" fill="url(#goldA)"/><circle cx="98" cy="150" r="6" fill="#FFF7D4"/>
+    <rect x="132" y="138" width="28" height="18" rx="7" fill="url(#silverA)" transform="rotate(-24 132 138)"/>
+    <circle cx="190" cy="148" r="14" fill="url(#goldA)"/><circle cx="190" cy="148" r="6" fill="#FFF7D4"/>
+    <rect x="220" y="140" width="30" height="20" rx="8" fill="url(#goldA)"/>
+  </g>
+</svg>
