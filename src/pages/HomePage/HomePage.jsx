@@ -1,4 +1,6 @@
 import Navbar from '../../components/Navbar/Navbar'
+import AboutSection from './AboutSection'
+import CapabilitiesSectionNew from './CapabilitiesSectionNew'
 import HeroSection from './HeroSection'
 
 function Homepage() {
@@ -6,6 +8,8 @@ function Homepage() {
     <>
       <Navbar />
       <HeroSection />
+      <AboutSection />
+      <CapabilitiesSectionNew />
     </>
   )
 }

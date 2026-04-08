@@ -1,0 +1,367 @@
+.capabilities-section {
+  padding: clamp(2.6rem, 5vw, 4.5rem) 0 clamp(2.8rem, 5.2vw, 4.8rem);
+}
+
+.capabilities-shell {
+  max-width: 1210px;
+  padding-inline: clamp(0.85rem, 2.8vw, 1.5rem);
+}
+
+.capabilities-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 320px);
+  align-items: end;
+  gap: clamp(1.2rem, 3vw, 4rem);
+}
+
+.capabilities-kicker {
+  font-size: clamp(0.44rem, 0.6vw, 0.58rem);
+  line-height: 1.35;
+  letter-spacing: 0.32em;
+  color: #8e9298;
+}
+
+.capabilities-title {
+  margin-top: clamp(0.4rem, 0.8vw, 0.6rem);
+  font-size: clamp(2.2rem, 3.5vw, 3.45rem);
+  font-weight: 400;
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+  color: #33383e;
+}
+
+.capabilities-intro {
+  max-width: 300px;
+  padding-bottom: 0.2rem;
+  font-size: clamp(0.76rem, 0.95vw, 0.9rem);
+  line-height: 1.35;
+  text-align: center;
+  color: #757a80;
+}
+
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.95rem;
+  margin-top: clamp(1.6rem, 2.6vw, 2rem);
+}
+
+.cap-card {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.cap-card-machining {
+  min-height: 276px;
+  padding: 1rem 1.15rem 1.15rem;
+  background: linear-gradient(180deg, #ffffff 0%, #f3f4f5 100%);
+  border: 1px solid #eceff1;
+  position: relative;
+}
+
+.cap-card-topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.4rem;
+  line-height: 1;
+  letter-spacing: 0.18em;
+  color: #8b9096;
+  text-transform: uppercase;
+}
+
+.cap-card-topline span:last-child {
+  padding: 0.16rem 0.36rem;
+  border-radius: 2px;
+  background: #eef1f3;
+}
+
+.cap-card-title {
+  margin-top: 0.95rem;
+  font-size: 1.28rem;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #343a40;
+}
+
+.cap-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.4rem 1.6rem;
+  margin-top: 2rem;
+}
+
+.cap-stat-label {
+  display: block;
+  font-size: 0.42rem;
+  line-height: 1.2;
+  letter-spacing: 0.18em;
+  color: #9ea3a8;
+  text-transform: uppercase;
+}
+
+.cap-stat-value {
+  display: block;
+  margin-top: 0.38rem;
+  font-size: 0.98rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #31373d;
+}
+
+.cap-card-mark {
+  position: absolute;
+  right: 0.9rem;
+  bottom: 0.7rem;
+  width: 70px;
+  height: 70px;
+  opacity: 0.16;
+}
+
+.cap-card-mark span {
+  position: absolute;
+  inset: 0;
+  border: 1px solid #d7dce0;
+  transform: rotate(45deg);
+}
+
+.cap-card-mark span:nth-child(2) {
+  transform: rotate(45deg) scale(0.7);
+}
+
+.cap-card-mark span:nth-child(3) {
+  transform: rotate(45deg) scale(0.42);
+}
+
+.cap-card-visual {
+  min-height: 276px;
+  position: relative;
+  background:
+    linear-gradient(180deg, rgba(248, 249, 250, 0.12), rgba(14, 17, 20, 0.32)),
+    linear-gradient(90deg, #d9dcdf 0%, #b9bdc1 20%, #f1f2f3 46%, #898d91 68%, #4b4f53 100%);
+}
+
+.cap-visual-image {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.cap-visual-column {
+  position: absolute;
+  top: -8%;
+  bottom: -8%;
+  background: linear-gradient(180deg, rgba(20, 22, 24, 0.78), rgba(77, 80, 83, 0.7));
+}
+
+.cap-visual-column-left {
+  left: 7%;
+  width: 7%;
+}
+
+.cap-visual-column-center {
+  left: 48%;
+  width: 9%;
+  background: linear-gradient(180deg, rgba(47, 50, 53, 0.6), rgba(15, 17, 19, 0.9));
+}
+
+.cap-visual-column-right {
+  right: 7%;
+  width: 7%;
+}
+
+.cap-visual-head {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 16%;
+  height: 44%;
+  transform: translateX(-50%);
+  background:
+    linear-gradient(90deg, #2c2f33 0%, #d0d4d8 42%, #6f7479 78%, #292c30 100%);
+  box-shadow: inset 0 -8px 14px rgba(0, 0, 0, 0.18);
+}
+
+.cap-visual-base {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 34%;
+  height: 18%;
+  transform: translateX(-50%);
+  background: linear-gradient(180deg, rgba(39, 43, 47, 0.7), rgba(14, 16, 18, 0.92));
+}
+
+.cap-visual-overlay {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 1.05rem 1.2rem 0.95rem;
+  background: linear-gradient(180deg, rgba(24, 27, 30, 0) 0%, rgba(22, 24, 27, 0.85) 34%, #17191c 100%);
+  color: #f4f5f6;
+}
+
+.cap-visual-index {
+  font-size: 0.45rem;
+  letter-spacing: 0.14em;
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.cap-visual-title {
+  margin-top: 0.2rem;
+  font-size: 1.85rem;
+  font-weight: 500;
+  line-height: 0.96;
+  letter-spacing: -0.045em;
+}
+
+.cap-visual-copy {
+  max-width: 185px;
+  margin-top: 0.5rem;
+  font-size: 0.58rem;
+  line-height: 1.35;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.cap-visual-meta {
+  display: flex;
+  gap: 0.55rem;
+  margin-top: 0.85rem;
+}
+
+.cap-visual-meta span {
+  font-size: 0.42rem;
+  line-height: 1;
+  letter-spacing: 0.14em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.cap-card-metals {
+  min-height: 172px;
+  padding: 1rem 1.1rem 1.15rem;
+  background: #edf2f5;
+}
+
+.cap-card-section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #42474d;
+}
+
+.cap-card-section-dot {
+  width: 0.33rem;
+  height: 0.33rem;
+  border-radius: 50%;
+  border: 1px solid #6d7278;
+}
+
+.cap-metals-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.cap-metal-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: #343940;
+}
+
+.cap-metal-bullet {
+  width: 0.18rem;
+  height: 0.18rem;
+  background: #4a5056;
+}
+
+.cap-card-finishing {
+  min-height: 172px;
+  padding: 1rem 1.05rem 0.9rem;
+  background: #353231;
+}
+
+.cap-finishing-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #f4f4f2;
+}
+
+.cap-finishing-list {
+  margin-top: 1.15rem;
+}
+
+.cap-finishing-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.85rem;
+  padding: 0.8rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.cap-finishing-item:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.cap-finishing-label {
+  display: block;
+  font-size: 0.36rem;
+  line-height: 1.2;
+  letter-spacing: 0.16em;
+  color: rgba(255, 255, 255, 0.38);
+}
+
+.cap-finishing-name {
+  margin-top: 0.28rem;
+  font-size: 0.68rem;
+  line-height: 1.35;
+  color: #f5f5f4;
+}
+
+.cap-finishing-arrow {
+  font-size: 0.88rem;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.42);
+}
+
+@media (max-width: 991.98px) {
+  .capabilities-header {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .capabilities-intro {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .capabilities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cap-card-machining,
+  .cap-card-visual,
+  .cap-card-metals,
+  .cap-card-finishing {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .capabilities-title {
+    font-size: 2rem;
+  }
+
+  .cap-stats-grid,
+  .cap-metals-grid {
+    grid-template-columns: 1fr;
+  }
+}

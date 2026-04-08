@@ -6,8 +6,8 @@ function HeroSection() {
   return (
     <section className="hero-section">
       <div className="container hero-shell">
-        <div className="row align-items-center g-4">
-          <div className="col-12 col-lg-6">
+        <div className="row align-items-center g-4 hero-row">
+          <div className="col-12 col-lg-6 hero-copy-col">
             <div className="hero-content">
               <p className="hero-kicker mb-0">450+Customized Precision Components Delivered</p>
               <h1 className="hero-title mb-0">
@@ -43,7 +43,7 @@ function HeroSection() {
             </div>
           </div>
 
-          <div className="col-12 col-lg-6">
+          <div className="col-12 col-lg-6 hero-media-col">
             <div className="hero-media-wrap">
               <img
                 src={heroStraightImage}
