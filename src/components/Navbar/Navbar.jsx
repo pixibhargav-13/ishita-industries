@@ -1,8 +1,10 @@
 import './Navbar.css'
 import companyLogo from '../../Images/ishita-navbar-logo.png';
+import companyLogoMobile from '../../Images/ishita-navbar-logo-mobile.png';
 import browserLogo from '../../Images/navbar-browser-logo.png';
 import downloadLogo from '../../Images/navbar-download-logo.png';
 import ToggleLogo from '../../Images/navbar-menu-toggle-logo.png';
+
 const navLinks = ['Home', 'About', 'Product', 'Quality']
 
 function Navbar() {
@@ -11,28 +13,31 @@ function Navbar() {
       <nav className="navbar navbar-expand-lg p-0">
         <div className="container nav-shell">
           <a className="navbar-brand brand-wrap d-flex align-items-center" href="#">
-           <img src={companyLogo}/>
+            <img src={companyLogo} className="brand-logo brand-logo--desktop" alt="Ishita Industries" />
+            <img src={companyLogoMobile} className="brand-logo brand-logo--mobile" alt="Ishita Industries" />
           </a>
 
+          {/* ✅ Menu button acts as toggler on mobile */}
           <button
-            className="navbar-toggler border-0 shadow-none nav-toggle-btn"
             type="button"
+            className="menu-btn navbar-toggler border-0 shadow-none d-lg-none"
             data-bs-toggle="collapse"
             data-bs-target="#mainNavbar"
             aria-controls="mainNavbar"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon nav-toggler-icon"></span>
+            Menu
+            <span className="menu-icon" aria-hidden="true">
+              <img src={ToggleLogo} alt="" />
+            </span>
           </button>
 
           <div className="collapse navbar-collapse justify-content-lg-between" id="mainNavbar">
             <ul className="navbar-nav mx-auto nav-links-list">
               {navLinks.map((link) => (
                 <li className="nav-item" key={link}>
-                  <a className="nav-link" href="#">
-                    {link}
-                  </a>
+                  <a className="nav-link" href="#">{link}</a>
                 </li>
               ))}
             </ul>
@@ -40,19 +45,21 @@ function Navbar() {
             <div className="nav-actions d-flex align-items-center">
               <button type="button" className="icon-button" aria-label="Change language">
                 <span className="icon-globe" aria-hidden="true">
-                  <img src={browserLogo}/>
+                  <img src={browserLogo} alt="" />
                 </span>
               </button>
               <button type="button" className="brochure-btn">
                 Brochure
                 <span className="brochure-icon" aria-hidden="true">
-                  <img src={downloadLogo}/>
+                  <img src={downloadLogo} alt="" />
                 </span>
               </button>
-              <button type="button" className="menu-btn">
+
+              {/*  Desktop-only Menu button (not a toggler) */}
+              <button type="button" className="menu-btn d-none d-lg-inline-flex">
                 Menu
                 <span className="menu-icon" aria-hidden="true">
-                  <img src={ToggleLogo}/>
+                  <img src={ToggleLogo} alt="" />
                 </span>
               </button>
             </div>
