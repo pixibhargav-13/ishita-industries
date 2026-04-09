@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400&family=Inclusive+Sans:wght@400&display=swap');
+
 /* ─── Base ──────────────────────────────────────────────── */
 .site-header {
   padding-top: clamp(0.75rem, 1.5vw, 1.25rem);
   background: #fff;
 }
+
 @font-face {
   font-family: 'Kantumruy';
   src: url('../../fonts/Kantumruy-Regular.ttf') format('truetype');
@@ -16,8 +18,9 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 1;
-  color:#343434;
+  color: #343434;
 }
+
 .nav-shell {
   max-width: 1210px;
   padding-inline: clamp(0.85rem, 2.8vw, 1.5rem);
@@ -30,7 +33,6 @@
   text-decoration: none;
 }
 
-/* Desktop logo: shown on lg+ */
 .brand-logo--desktop {
   display: block;
   height: 44px;
@@ -38,7 +40,6 @@
   object-fit: contain;
 }
 
-/* Mobile logo: hidden by default */
 .brand-logo--mobile {
   display: none;
   height: 36px;
@@ -83,7 +84,7 @@
   object-fit: contain;
 }
 
-/* ── Brochure button — fixed to match design ── */
+/* ── Brochure button ── */
 .brochure-btn {
   border: 1px solid #5f6165;
   height: 36px;
@@ -113,39 +114,40 @@
   font-style: normal;
   align-items: center;
   gap: 0.45rem;
-  font-size: 0.95rem;   /* was 1.9rem */
+  font-size: 0.95rem;
   font-weight: 400;
   line-height: 1;
   white-space: nowrap;
 }
 
+/* ── Toggle icon animation ── */
+.toggle-icon {
+  width: 18px;
+  height: 14px;
+  object-fit: contain;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center;
+}
 
+.toggle-icon.rotate {
+  transform: rotate(180deg);
+  opacity: 0.75;
+}
 
-/* ─── Toggler (mobile hamburger) ─────────────────────────── */
-.nav-toggle-btn {
+/* ── Override Bootstrap toggler styles ── */
+.menu-btn.navbar-toggler {
   padding: 0;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #3d3f43;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
 }
 
-.nav-toggler-icon {
-  background-image: none;
-  width: 26px;
-  height: 20px;
-  display: inline-block;
-  position: relative;
-  border-top: 2px solid #2e3034;
+.menu-btn.navbar-toggler:focus {
+  box-shadow: none;
 }
-
-.nav-toggler-icon::before,
-.nav-toggler-icon::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  width: 26px;
-  border-top: 2px solid #2e3034;
-}
-
-.nav-toggler-icon::before { top: 6px; }
-.nav-toggler-icon::after  { top: 14px; }
 
 /* ─── Tablet (992px – 1199px) ────────────────────────────── */
 @media (max-width: 1199.98px) {
@@ -171,7 +173,6 @@
     padding-bottom: 0.65rem;
   }
 
-  /* Switch to mobile logo */
   .brand-logo--desktop { display: none; }
   .brand-logo--mobile  { display: block; }
 
@@ -237,18 +238,4 @@
   .menu-btn {
     font-size: 0.85rem;
   }
-}
-/* Override Bootstrap's default toggler styles on our menu-btn */
-.menu-btn.navbar-toggler {
-  padding: 0;
-  font-size: 0.95rem;
-  font-weight: 400;
-  color: #3d3f43;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-}
-
-.menu-btn.navbar-toggler:focus {
-  box-shadow: none;
 }

@@ -4,10 +4,15 @@ import companyLogoMobile from '../../Images/ishita-navbar-logo-mobile.png';
 import browserLogo from '../../Images/navbar-browser-logo.png';
 import downloadLogo from '../../Images/navbar-download-logo.png';
 import ToggleLogo from '../../Images/navbar-menu-toggle-logo.png';
+import { useState } from 'react';
 
 const navLinks = ['Home', 'About', 'Product', 'Quality']
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleToggle = () => setIsOpen(prev => !prev);
+
   return (
     <header className="site-header">
       <nav className="navbar navbar-expand-lg p-0">
@@ -17,19 +22,24 @@ function Navbar() {
             <img src={companyLogoMobile} className="brand-logo brand-logo--mobile" alt="Ishita Industries" />
           </a>
 
-          {/* ✅ Menu button acts as toggler on mobile */}
+          {/* Menu button — acts as toggler on mobile */}
           <button
             type="button"
-            className="menu-btn navbar-toggler border-0 shadow-none d-lg-none"
+            className={`menu-btn navbar-toggler border-0 shadow-none d-lg-none ${isOpen ? 'is-open' : ''}`}
             data-bs-toggle="collapse"
             data-bs-target="#mainNavbar"
             aria-controls="mainNavbar"
-            aria-expanded="false"
+            aria-expanded={isOpen}
             aria-label="Toggle navigation"
+            onClick={handleToggle}
           >
             Menu
             <span className="menu-icon" aria-hidden="true">
-              <img src={ToggleLogo} alt="" />
+              <img
+                src={ToggleLogo}
+                alt=""
+                className={`toggle-icon ${isOpen ? 'rotate' : ''}`}
+              />
             </span>
           </button>
 
@@ -55,7 +65,7 @@ function Navbar() {
                 </span>
               </button>
 
-              {/*  Desktop-only Menu button (not a toggler) */}
+              {/* Desktop-only Menu button */}
               <button type="button" className="menu-btn d-none d-lg-inline-flex">
                 Menu
                 <span className="menu-icon" aria-hidden="true">
