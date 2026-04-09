@@ -1,0 +1,200 @@
+.international-reach-section {
+  padding: clamp(3rem, 5.5vw, 4.9rem) 0 clamp(3rem, 5.2vw, 4.6rem);
+}
+
+.reach-shell {
+  max-width: 1210px;
+  padding-inline: clamp(0.85rem, 2.8vw, 1.5rem);
+}
+
+.reach-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(235px, 420px);
+  align-items: start;
+  gap: clamp(1.5rem, 4vw, 5rem);
+  margin-bottom: clamp(2.5rem, 4vw, 4rem);
+}
+
+.reach-kicker {
+  font-size: clamp(0.7rem, 0.78vw, 0.82rem);
+  line-height: 1.2;
+  letter-spacing: 0.34em;
+  color: #797d83;
+}
+
+.reach-title {
+  margin-top: clamp(0.95rem, 1.35vw, 1.2rem);
+  font-size: clamp(3.05rem, 4.1vw, 4.18rem);
+  font-weight: 400;
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+  color: #31373d;
+}
+
+.reach-title span {
+  margin-top: 0.18em;
+}
+
+.reach-intro {
+  padding-top: clamp(3.4rem, 4.7vw, 4.8rem);
+  font-size: clamp(0.85rem, 0.92vw, 0.95rem);
+  line-height: 1.55;
+  color: #666b72;
+}
+
+.reach-map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: clamp(3rem, 5vw, 5rem);
+  width: 100%;
+}
+
+.reach-map-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.reach-cta-block {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.reach-contact-card {
+  position: relative;
+  background-color: #fbfbfb;
+  border: 1px solid #f2f2f2;
+  border-radius: 12px;
+  padding: 30px 20px 20px;
+  text-align: center;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+
+/* Background grid pattern if you want to be extremely accurate, for now just a border and shadow */
+.reach-contact-card {
+  background-image:
+    linear-gradient(to right, #f8f8f8 1px, transparent 1px),
+    linear-gradient(to bottom, #f8f8f8 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.reach-contact-icon {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  width: 32px;
+  height: 32px;
+}
+
+.reach-contact-title {
+  font-size: clamp(1.4rem, 2.2vw, 2.1rem);
+  font-weight: 400;
+  color: #212529;
+  line-height: 1.35;
+  margin-bottom: 1.2rem;
+}
+
+.reach-contact-text {
+  font-size: clamp(0.68rem, 0.8vw, 0.78rem);
+  line-height: 1.6;
+  color: #000000;
+  max-width: 720px;
+  margin: 0 auto 2.5rem;
+}
+
+.reach-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 3px 10px;
+  background-color: transparent;
+  color: #495057;
+  font-size: clamp(0.7rem, 0.8vw, 0.75rem);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.reach-btn:hover {
+  background-color: #f8f9fa;
+  border-color: #adb5bd;
+}
+
+.reach-btn span {
+  font-size: 1rem;
+}
+
+.reach-links-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.reach-link-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid #f2f2f2;
+  border-radius: 8px;
+  padding: 15px 20px;
+  background-color: #fbfbfb;
+  color: #343a40;
+  transition: all 0.2s ease;
+}
+
+.reach-link-card:hover {
+  background-color: #f8f9fa;
+  border-color: #e9ecef;
+}
+
+.reach-link-text {
+  font-size: clamp(0.75rem, 0.85vw, 0.85rem);
+}
+
+.reach-contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reach-link-arrow {
+  color: #6c757d;
+  font-size: 1rem;
+}
+
+@media (max-width: 991.98px) {
+  .reach-header {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .reach-intro {
+    padding-top: 0;
+  }
+
+  .reach-contact-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .reach-links-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reach-contact-title {
+    font-size: 1.5rem;
+  }
+
+  .reach-contact-icon {
+    position: static;
+    margin: 0 auto 1.5rem;
+  }
+}
