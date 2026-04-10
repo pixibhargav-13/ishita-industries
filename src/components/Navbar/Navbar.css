@@ -56,6 +56,11 @@
   color: #212327;
 }
 
+.nav-link.active {
+  color: #212327;
+  font-weight: 500;
+}
+
 /* ─── Nav actions ────────────────────────────────────────── */
 .nav-actions {
   gap: 0.6rem;

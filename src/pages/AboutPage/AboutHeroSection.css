@@ -1,0 +1,208 @@
+.about-hero-section {
+  padding: clamp(2.4rem, 4.6vw, 4rem) 0 clamp(3rem, 5vw, 4.8rem);
+}
+
+.about-hero-shell {
+  max-width: 1210px;
+  padding-inline: clamp(0.95rem, 2.8vw, 1.55rem);
+}
+
+.about-hero-top {
+  display: block;
+}
+
+.about-hero-title {
+  font-size: clamp(2.7rem, 5vw, 4.35rem);
+  font-weight: 400;
+  line-height: 0.93;
+  letter-spacing: 3px;
+  color: #353a40;
+}
+
+.about-hero-title-light {
+  margin-top: 0.08em;
+  color: #b6bcc2;
+}
+
+.about-hero-meta {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: clamp(1.25rem, 3vw, 3rem);
+  align-items: end;
+  margin-top: clamp(1.25rem, 2vw, 1.7rem);
+}
+
+.about-hero-copy {
+  max-width: 520px;
+  font-size: clamp(0.78rem, 1.04vw, 0.92rem);
+  line-height: 1.6;
+  color: #2D3435;
+  margin-top: 30px;
+}
+
+.about-hero-line-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-self: end;
+  gap: 0.55rem;
+}
+
+.about-hero-line {
+  width: 96px;
+  height: 3.5px;
+  background: #555a60;
+  display: block;
+}
+
+.about-hero-est {
+  font-size: 0.6rem;
+  line-height: 1;
+  letter-spacing: 0.18em;
+  color: #7f8388;
+  white-space: nowrap;
+}
+
+.about-hero-factory-frame {
+  margin-top: clamp(1.3rem, 2.2vw, 2rem);
+  border: 1px solid #b9c0c6;
+  background: #edf2f6;
+  overflow: hidden;
+}
+
+.about-hero-factory-image {
+  width: 100%;
+  display: block;
+}
+
+.about-chairman-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(1.4rem, 4vw, 5rem);
+  align-items: end;
+  margin-top: clamp(1.9rem, 3vw, 2.4rem);
+}
+
+.about-chairman-kicker {
+  font-size: 0.70rem;
+  line-height: 1.2;
+  letter-spacing: 0.32em;
+  color: #8a8e94;
+}
+
+.about-chairman-title {
+  margin-top: 1rem;
+  font-size: clamp(2.35rem, 4.15vw, 3.75rem);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: 3px;
+  color: #3a3f45;
+}
+
+.about-chairman-summary {
+  max-width: 318px;
+  font-size: clamp(0.8rem, 0.92vw, 0.9rem);
+  line-height: 1.62;
+  color: #71757b;
+}
+
+.about-chairman-card {
+  margin-top: 1.15rem;
+  border: 1px solid #b8b7b4;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #f6f4ef 0%, #f0ece6 100%);
+  padding: clamp(0.9rem, 1.8vw, 1.2rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 124px;
+  gap: clamp(1rem, 2vw, 1.4rem);
+  align-items: end;
+}
+
+.about-chairman-copy-block {
+  display: grid;
+  gap: 0.72rem;
+}
+
+.about-chairman-card-title {
+  font-size: clamp(1rem, 1.08vw, 1.08rem);
+  font-weight: 600;
+  color: #42474d;
+}
+
+.about-chairman-card-text {
+  font-size: clamp(0.7rem, 0.8vw, 0.8rem);
+  line-height: 1.62;
+  color: #75787c;
+}
+
+.about-chairman-card-text-quote {
+  max-width: 96%;
+}
+
+.about-chairman-signoff {
+  display: grid;
+  gap: 0.1rem;
+  margin-top: 0.4rem;
+}
+
+.about-chairman-name {
+  font-size: 0.62rem;
+  letter-spacing: 0.28em;
+  color: #565b61;
+}
+
+.about-chairman-role {
+  font-size: 0.68rem;
+  color: #7b8086;
+}
+
+.about-chairman-photo-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-chairman-photo {
+  width: 100%;
+  max-width: 122px;
+  border-radius: 10px;
+  display: block;
+}
+
+@media (max-width: 991.98px) {
+  .about-chairman-intro {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .about-hero-meta {
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+  }
+
+  .about-hero-copy,
+  .about-chairman-summary {
+    max-width: 100%;
+  }
+
+  .about-hero-line-block {
+    justify-self: start;
+  }
+
+  .about-chairman-card {
+    grid-template-columns: 1fr;
+  }
+
+  .about-chairman-photo-wrap {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about-hero-title {
+    font-size: 2.35rem;
+  }
+
+  .about-chairman-title {
+    font-size: 2.1rem;
+  }
+}

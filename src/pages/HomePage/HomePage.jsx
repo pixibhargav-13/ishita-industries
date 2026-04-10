@@ -1,4 +1,4 @@
-import Navbar from '../../components/Navbar/Navbar'
+import Navbar from '../../components/Navbar/NavbarRouter'
 import AboutSection from './AboutSection'
 import CapabilitiesSectionNew from './CapabilitiesSectionNew'
 import HeroSection from './HeroSection'
