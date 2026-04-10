@@ -1,0 +1,23 @@
+<svg width="320" height="380" viewBox="0 0 320 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgD" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8f9fb"/>
+      <stop offset="1" stop-color="#c7d4e5"/>
+    </linearGradient>
+    <linearGradient id="skinD" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#efbe9c"/>
+      <stop offset="1" stop-color="#b67955"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="380" rx="18" fill="url(#bgD)"/>
+  <ellipse cx="165" cy="160" rx="74" ry="86" fill="url(#skinD)"/>
+  <path d="M93 160C95 94 127 54 179 54C224 54 252 90 246 148C225 128 198 117 166 117C139 117 117 127 98 146L93 160Z" fill="#18191d"/>
+  <path d="M116 74C132 46 157 31 192 31C221 31 243 42 257 64C226 63 198 67 173 75C149 82 130 82 116 74Z" fill="#23252b"/>
+  <circle cx="139" cy="158" r="7" fill="#2a2b30"/>
+  <circle cx="190" cy="158" r="7" fill="#2a2b30"/>
+  <path d="M155 185C162 191 169 191 176 185" stroke="#8a5c45" stroke-width="4" stroke-linecap="round"/>
+  <path d="M96 262C113 227 136 210 164 210C193 210 217 228 234 262V380H96V262Z" fill="#2e3c4f"/>
+  <path d="M127 228C136 244 148 254 164 254C180 254 192 244 201 228L216 380H112L127 228Z" fill="#f4f6fa"/>
+  <path d="M98 274L160 228L232 274" stroke="#dae4f0" stroke-width="5"/>
+  <path d="M134 262L160 289L188 262" stroke="#a6b8cb" stroke-width="4"/>
+</svg>

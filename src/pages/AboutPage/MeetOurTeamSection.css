@@ -1,0 +1,150 @@
+.meet-team-section {
+  padding: clamp(3rem, 5.4vw, 4.8rem) 0;
+  background: #1F1F21;
+}
+
+.meet-team-shell {
+  max-width: 1210px;
+  padding-inline: clamp(0.95rem, 2.8vw, 1.55rem);
+}
+
+.meet-team-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
+  gap: clamp(1.5rem, 4vw, 6rem);
+  align-items: end;
+}
+
+.meet-team-kicker {
+  font-size: 0.68rem;
+  line-height: 1.2;
+  letter-spacing: 0.38em;
+  color: #6F6F6F;
+}
+
+.meet-team-title {
+  margin-top: 1rem;
+  font-size: clamp(3rem, 3.5vw, 4.2rem);
+  font-weight: 400;
+  line-height: 0.92;
+  letter-spacing: 3px;
+  color: #f3f1ed;
+}
+
+.meet-team-copy {
+  max-width: 346px;
+  font-size: clamp(0.86rem, 0.95vw, 0.95rem);
+  line-height: 1.65;
+  color: #9b989a;
+  margin-bottom: 0.55rem;
+}
+
+.meet-team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: clamp(1.8rem, 3vw, 2.35rem);
+}
+
+.team-card {
+  position: relative;
+  min-height: 286px;
+  border: 1px solid #6a6769;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #322f31;
+}
+
+.team-card-image-wrap {
+  position: absolute;
+  inset: 0;
+}
+
+.team-card-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.team-card-overlay {
+  position: absolute;
+  inset: auto 10px 10px 10px;
+  padding: 0.72rem 0.8rem 0.68rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  border: 1px solid rgba(244, 240, 232, 0.75);
+  border-radius: 10px;
+  background:
+    linear-gradient(90deg, rgba(196, 173, 164, 0.48) 0%, rgba(255, 255, 255, 0.18) 48%, rgba(52, 39, 51, 0.32) 100%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.team-card-overlay > div {
+  min-width: 0;
+}
+
+.team-card-name {
+  font-size: 0.96rem;
+  font-weight: 500;
+  line-height: 1.15;
+  color: #fbf8f2;
+}
+
+.team-card-role {
+  margin-top: 0.24rem;
+  font-size: 0.58rem;
+  line-height: 1.2;
+  letter-spacing: 0;
+  text-transform: none;
+  color: rgba(243, 239, 231, 0.82);
+}
+
+.team-card-link {
+  width: 28px;
+  height: 28px;
+  border: 1px solid rgba(246, 240, 233, 0.75);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.14);
+  color: #f3f0eb;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.team-card-linkedin {
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: lowercase;
+}
+
+@media (max-width: 991.98px) {
+  .meet-team-header {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .meet-team-copy {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+
+  .meet-team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 575.98px) {
+  .meet-team-title {
+    font-size: 2.35rem;
+  }
+
+  .meet-team-grid {
+    grid-template-columns: 1fr;
+  }
+}

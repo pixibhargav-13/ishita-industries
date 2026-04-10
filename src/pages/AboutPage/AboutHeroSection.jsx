@@ -58,8 +58,8 @@ function AboutHeroSection() {
               global precision brass components company, connecting India with the world.
             </p>
             <p className="about-chairman-card-text about-chairman-card-text-quote mb-0">
-              I am extremely thankful for this opportunity to introduce Ishita Brass to all of you
-              taking an interest in our company.
+              "I am extremely thankful for this opportunity to introduce Ishita Brass to all of you
+              taking an interest in our company."
             </p>
 
             <div className="about-chairman-signoff">
