@@ -1,0 +1,142 @@
+.free-to-contact-us-section {
+  padding: clamp(1rem, 3vw, 2rem) 0 clamp(3rem, 5.2vw, 4.6rem);
+}
+
+.contactus-shell {
+  max-width: 1210px;
+  padding-inline: clamp(0.85rem, 2.8vw, 1.5rem);
+}
+
+.contactus-cta-block {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.contactus-card {
+  position: relative;
+  background-color: #fbfbfb;
+  border: 1px solid #f2f2f2;
+  border-radius: 12px;
+  padding: 30px 20px 20px;
+  text-align: center;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+
+/* Background grid pattern if you want to be extremely accurate, for now just a border and shadow */
+.contactus-card {
+  background-image:
+    linear-gradient(to right, #f8f8f8 1px, transparent 1px),
+    linear-gradient(to bottom, #f8f8f8 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.contactus-icon {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  width: 32px;
+  height: 32px;
+}
+
+.contactus-title {
+  font-size: clamp(1.4rem, 2.2vw, 2.1rem);
+  font-weight: 400;
+  color: #212529;
+  line-height: 1.35;
+  margin-bottom: 1.2rem;
+}
+
+.contactus-text {
+  font-size: clamp(0.68rem, 0.8vw, 0.78rem);
+  line-height: 1.6;
+  color: #000000;
+  max-width: 720px;
+  margin: 0 auto 2.5rem;
+}
+
+.contactus-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 3px 10px;
+  background-color: transparent;
+  color: #495057;
+  font-size: clamp(0.7rem, 0.8vw, 0.75rem);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.contactus-btn:hover {
+  background-color: #f8f9fa;
+  border-color: #adb5bd;
+}
+
+.contactus-btn span {
+  font-size: 1rem;
+}
+
+.contactus-links-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.contactus-link-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid #f2f2f2;
+  border-radius: 8px;
+  padding: 15px 20px;
+  background-color: #fbfbfb;
+  color: #343a40;
+  transition: all 0.2s ease;
+}
+
+.contactus-link-card:hover {
+  background-color: #f8f9fa;
+  border-color: #e9ecef;
+}
+
+.contactus-link-text {
+  font-size: clamp(0.75rem, 0.85vw, 0.85rem);
+}
+
+.contactus-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactus-link-arrow {
+  color: #6c757d;
+  font-size: 1rem;
+}
+
+@media (max-width: 991.98px) {
+  .contactus-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .contactus-links-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contactus-title {
+    font-size: 1.5rem;
+  }
+
+  .contactus-icon {
+    position: static;
+    margin: 0 auto 1.5rem;
+  }
+}

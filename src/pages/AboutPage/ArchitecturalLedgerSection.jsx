@@ -1,7 +1,7 @@
 import './ArchitecturalLedgerSection.css'
 import dummyImage from '../../assets/hero.png'
 import foundationOfModernInfra from '../../Images/foundation-of-modern-infra.png'
-
+import backboneOfPrecision from '../../Images/backbone-of-precision.png' 
 const applicationsList = [
   { id: 1, text: 'Automated Fabrications', icon: (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -31,10 +31,20 @@ const statsList = [
   { id: 3, value: '10x', label: 'Growth', theme: 'dark' }
 ]
 
+const capabilitiesData = [
+  { id: '01', number: '01.', title: 'INDUSTRY EXPERIENCE', desc: 'Over two decades of expertise in precision brass manufacturing.' },
+  { id: '02', number: '02.', title: 'QUALITY RANGE', desc: 'Wide range of high-quality extruded brass hardware products.' },
+  { id: '03', number: '03.', title: 'ETHICAL PRACTICES', desc: 'Transparent and reliable business operations built on trust.' },
+  { id: '04', number: '04.', title: 'ADVANCED MANUFACTURING', desc: 'Equipped with modern production facilities and testing systems.' },
+  { id: '05', number: '05.', title: 'QUALITY CONTROL', desc: 'Strict quality checks at every stage to ensure consistency.' },
+  { id: '06', number: '06.', title: 'PROCESS EXCELLENCE', desc: 'Optimized workflows for efficiency, accuracy, and performance.' }
+]
+
 function ArchitecturalLedgerSection() {
   return (
-    <section className="architectural-ledger-section">
-      <div className="container ledger-shell">
+    <>
+      <section className="architectural-ledger-section">
+        <div className="container ledger-shell">
         <div className="ledger-header">
           <div>
             <p className="ledger-kicker mb-0">FROM VISION TO MANUFACTURING</p>
@@ -116,8 +126,50 @@ function ArchitecturalLedgerSection() {
             </svg>
           </article>
         </div>
+
+        <div className="ledger-infrastructure">
+          <div className="ledger-infrastructure-content">
+            <span className="ledger-number">05 — INFRASTRUCTURE</span>
+            <h3 className="ledger-infrastructure-title">THE BACKBONE OF<br />PRECISION.</h3>
+            <p className="ledger-infrastructure-desc">
+              Located in Jamnagar – Gujrat, our facility is well segregated into various departments such as manufacturing unit, storage unit and quality testing unit. Our manufacturing unit is stretched over a vast area of 25,000 sq. ft.
+            </p>
+            <p className="ledger-infrastructure-desc">
+              The use of Dual Frequency induction furnace for melting and alloying, Heavy presses for extrusion assure precision in production.
+            </p>
+          </div>
+          <div className="ledger-infrastructure-image-wrapper">
+            <img src={backboneOfPrecision} alt="Infrastructure" className="ledger-infrastructure-image" />
+          </div>
+        </div>
       </div>
     </section>
+
+      {/* 06 Capabilities */}
+      <section className="ledger-capabilities-section">
+        <div className="container ledger-shell">
+          <div className="caps-header">
+            <div>
+              <p className="ledger-kicker mb-0">06 — OUR STRENGTHS</p>
+              <h2 className="ledger-title mb-0">CORE CAPABILITIES.</h2>
+            </div>
+            <p className="ledger-intro mb-0">
+              Our strength lies in decades of industrial experience, advanced manufacturing, and a commitment to quality that meets global standards.
+            </p>
+          </div>
+
+          <div className="caps-grid">
+            {capabilitiesData.map((cap) => (
+              <article key={cap.id} className="caps-card">
+                <span className="caps-number">{cap.number}</span>
+                <h3 className="caps-title">{cap.title}</h3>
+                <p className="caps-desc mb-0">{cap.desc}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   )
 }
 

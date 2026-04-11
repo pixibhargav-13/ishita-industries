@@ -9,6 +9,8 @@ import GlobalReachSection from "./GlobalReachSection";
 import ArchitecturalLedgerSection from "./ArchitecturalLedgerSection";
 import QualityAssuranceSection from "./QualityAssuranceSection";
 import UniqueSellingPropositionSection from '../HomePage/UniqueSellingPropositionSection'
+import FreeToContactUsSection from '../HomePage/FreeToContactUsSection'
+import Footer from '../../components/Footer/Footer'
 
 function AboutPage() {
   return (
@@ -22,8 +24,10 @@ function AboutPage() {
       <FastenerStandardsSection />
       <PerformanceResultsSection />
       <GlobalReachSection />
-      <ArchitecturalLedgerSection />
       <UniqueSellingPropositionSection/>
+      <ArchitecturalLedgerSection />
+      <FreeToContactUsSection/>
+      <Footer/>
     </>
   );
 }

@@ -7,6 +7,7 @@ import PrecisionComponentsSection from './PrecisionComponentsSection'
 import IndustrialComponentsSection from './IndustrialComponentsSection'
 import FactsSection from './FactsSection'
 import InternationalReachSection from './InternationalReachSection'
+import FreeToContactUsSection from './FreeToContactUsSection'
 import UniqueSellingPropositionSection from './UniqueSellingPropositionSection'
 import Footer from '../../components/Footer/Footer'
 
@@ -23,6 +24,7 @@ function Homepage() {
       <UniqueSellingPropositionSection />
       <FactsSection />
       <InternationalReachSection />
+      <FreeToContactUsSection />
       <Footer />
     </>
   )
