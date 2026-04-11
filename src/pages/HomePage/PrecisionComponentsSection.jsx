@@ -3,7 +3,7 @@ import turnedImage from '../../Images/brass-turned-component.png'
 import forgedImage from '../../Images/brass-forged-component.png'
 import millingImage from '../../Images/brass-milling-component.png'
 import broachImage from '../../Images/bras-broach-component.png'
-import  stampingImage from '../../assets/precision-stamping.svg'
+import  stampingImage from '../../Images/brass-stamping-component.png'
 import castingImage from '../../Images/brass-casting-component.png'
 const componentCards = [
   {
