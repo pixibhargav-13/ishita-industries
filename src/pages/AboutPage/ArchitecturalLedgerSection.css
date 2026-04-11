@@ -1,0 +1,306 @@
+.architectural-ledger-section {
+  padding: clamp(3rem, 5.5vw, 4.9rem) 0 clamp(3rem, 5.2vw, 4.6rem);
+  background-color: #ffffff;
+}
+
+.ledger-shell {
+  max-width: 1210px;
+  padding-inline: clamp(0.85rem, 2.8vw, 1.5rem);
+}
+
+.ledger-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(235px, 420px);
+  align-items: start;
+  gap: clamp(1.5rem, 4vw, 5rem);
+  margin-bottom: clamp(3.5rem, 5vw, 5.5rem);
+}
+
+.ledger-kicker {
+  font-size: clamp(0.7rem, 0.78vw, 0.82rem);
+  line-height: 1.2;
+  letter-spacing: 0.1em; 
+  text-transform: uppercase;
+  color: #797d83;
+}
+
+.ledger-title {
+  margin-top: clamp(0.95rem, 1.35vw, 1.2rem);
+  font-size: clamp(3.05rem, 4.1vw, 4.18rem);
+  font-weight: 400;
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+  color: #31373d;
+}
+
+.ledger-intro {
+  padding-top: clamp(3.4rem, 4.7vw, 4.8rem);
+  font-size: clamp(0.85rem, 0.92vw, 0.95rem);
+  line-height: 1.55;
+  color: #666b72;
+}
+
+/* Bento Grid */
+.ledger-bento {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: clamp(1rem, 2vw, 1.5rem);
+}
+
+.ledger-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.ledger-number {
+  font-size: clamp(0.65rem, 0.72vw, 0.75rem);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: #90949a;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+/* 01 Inception */
+.ledger-card--inception {
+  grid-column: span 7;
+  padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1.5rem, 3vw, 2.5rem) 0 0;
+}
+
+.ledger-inception-title {
+  font-size: clamp(1.8rem, 2.8vw, 3rem);
+  font-weight: 400;
+  line-height: 1.1;
+  color: #31373d;
+  margin-bottom: clamp(2rem, 3.5vw, 4rem);
+  max-width: 65%;
+}
+
+.ledger-inception-row {
+  display: flex;
+  align-items: flex-end;
+  gap: clamp(1.5rem, 3vw, 3rem);
+}
+
+.ledger-inception-desc {
+  flex: 1;
+  font-size: clamp(0.75rem, 0.85vw, 0.88rem);
+  line-height: 1.6;
+  color: #797d83;
+}
+
+.ledger-inception-image-wrapper {
+  width: clamp(180px, 35%, 260px);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.ledger-inception-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 02 Applications */
+.ledger-card--applications {
+  grid-column: span 3;
+  background-color: #313336;
+  padding: clamp(2rem, 3vw, 3rem);
+}
+
+.ledger-number--dark {
+  color: #8c8f94;
+}
+
+.ledger-applications-title {
+  font-size: clamp(1.2rem, 1.4vw, 1.5rem);
+  font-weight: 400;
+  color: #f2f4f6;
+  margin-bottom: 2.5rem;
+}
+
+.ledger-applications-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.ledger-applications-list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: clamp(0.8rem, 1.2vw, 1.2rem) 0;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.app-icon {
+  width: 14px;
+  height: 14px;
+  color: #8c8f94;
+}
+
+.app-text {
+  font-size: clamp(0.75rem, 0.8vw, 0.85rem);
+  color: #cfd3d8;
+  font-weight: 300;
+}
+
+/* 03 Saga */
+.ledger-card--saga {
+  grid-column: span 5;
+  background-color: #f5f6f8;
+  padding: clamp(2rem, 3.5vw, 3.5rem) clamp(2rem, 3vw, 3rem);
+}
+
+.ledger-saga-title {
+  font-size: clamp(1.1rem, 1.3vw, 1.4rem);
+  font-weight: 500;
+  color: #31373d;
+  margin-bottom: 1.2rem;
+}
+
+.ledger-saga-desc {
+  font-size: clamp(0.75rem, 0.85vw, 0.85rem);
+  line-height: 1.6;
+  color: #666b72;
+  margin-bottom: clamp(2.5rem, 4.5vw, 3.5rem);
+}
+
+.ledger-saga-stats {
+  display: flex;
+  gap: 1rem;
+}
+
+.ledger-stat-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: clamp(1rem, 1.5vw, 1.5rem) 0;
+  text-align: center;
+}
+
+.ledger-stat-box--light {
+  background-color: #eaeced;
+  color: #31373d;
+}
+
+.ledger-stat-box--dark {
+  background-color: #313336;
+  color: #ffffff;
+}
+
+.stat-value {
+  font-size: clamp(1.1rem, 1.3vw, 1.35rem);
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.stat-label {
+  font-size: clamp(0.68rem, 0.75vw, 0.8rem);
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+/* 04 Satisfaction */
+.ledger-card--satisfaction {
+  grid-column: span 5;
+  background-color: #dde3e5;
+  padding: clamp(2rem, 3.5vw, 3.5rem) clamp(2rem, 3vw, 3rem);
+  position: relative;
+  overflow: hidden;
+}
+
+.ledger-satisfaction-content {
+  position: relative;
+  z-index: 2;
+}
+
+.ledger-quote {
+  font-size: clamp(0.85rem, 0.92vw, 0.95rem);
+  line-height: 1.6;
+  color: #4a4d53;
+  margin-bottom: clamp(2rem, 3vw, 3rem);
+  font-weight: 400;
+}
+
+.ledger-quote.italic {
+  font-style: italic;
+}
+
+.ledger-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-line {
+  width: 40px;
+  height: 1px;
+  background-color: #8c8f94;
+}
+
+.author-name {
+  font-size: clamp(0.65rem, 0.72vw, 0.75rem);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: #4a4d53;
+  text-transform: uppercase;
+}
+
+.ledger-watermark {
+  position: absolute;
+  bottom: -15%;
+  right: -5%;
+  width: clamp(140px, 20vw, 200px);
+  color: rgba(0,0,0,0.03);
+  z-index: 1;
+}
+
+@media (max-width: 991.98px) {
+  .ledger-header {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .ledger-intro {
+    padding-top: 0;
+  }
+
+  .ledger-bento {
+    grid-template-columns: 1fr;
+  }
+
+  .ledger-card--inception,
+  .ledger-card--applications,
+  .ledger-card--saga,
+  .ledger-card--satisfaction {
+    grid-column: span 1;
+  }
+
+  .ledger-card--inception {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .ledger-inception-row {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .ledger-inception-image-wrapper {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .ledger-saga-stats {
+    flex-direction: column;
+  }
+}
