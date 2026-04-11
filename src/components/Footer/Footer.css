@@ -1,3 +1,4 @@
+/* ─── Base ──────────────────────────────────────────────── */
 .footer-section {
   background-color: #242526;
   color: #e4e6ea;
@@ -11,6 +12,7 @@
   margin: 0 auto;
 }
 
+/* ─── Desktop top row ────────────────────────────────────── */
 .footer-top-row {
   display: grid;
   grid-template-columns: 1.5fr 1.5fr 1.5fr 3fr;
@@ -18,11 +20,18 @@
   margin-bottom: clamp(3rem, 4vw, 4.5rem);
 }
 
+/* ─── Mobile layout: hidden on desktop ──────────────────── */
+.footer-mobile-layout {
+  display: none;
+}
+
+/* ─── Shared column styles ───────────────────────────────── */
 .footer-col-title {
   font-size: clamp(0.95rem, 1vw, 1.05rem);
   font-weight: 600;
   color: #f5f6f7;
   margin-bottom: 1.5rem;
+  margin-top: 0;
 }
 
 .footer-link-list {
@@ -37,7 +46,7 @@
 .footer-link-list a {
   color: #DADADA;
   text-decoration: none;
-  font-size: clamp(1rem, 0.85vw, 0.88rem);
+  font-size: clamp(0.85rem, 0.85vw, 0.88rem);
   transition: color 0.2s ease;
   font-weight: 400;
 }
@@ -46,6 +55,7 @@
   color: #ffffff;
 }
 
+/* ─── Contact column ─────────────────────────────────────── */
 .footer-contact-col {
   display: flex;
   flex-direction: column;
@@ -64,7 +74,7 @@
 .footer-phone,
 .footer-emails p {
   color: #DADADA;
-  font-size: clamp(1rem, 0.9vw, 0.9rem);
+  font-size: clamp(0.85rem, 0.9vw, 0.9rem);
   line-height: 1.6;
   margin-bottom: 1.2rem;
   font-style: normal;
@@ -84,6 +94,7 @@
   color: #ffffff;
 }
 
+/* ─── Socials ────────────────────────────────────────────── */
 .footer-socials {
   display: flex;
   gap: 1.2rem;
@@ -109,10 +120,11 @@
   color: #ffffff;
 }
 
+/* ─── Bottom row ─────────────────────────────────────────── */
 .footer-divider {
   border: 0;
   height: 1.5px;
-  background-color: #DADADA ;
+  background-color: #DADADA;
   margin-bottom: 1.5rem;
 }
 
@@ -134,6 +146,7 @@
   font-size: 0.8rem;
 }
 
+/* ─── Tablet (< 992px) ───────────────────────────────────── */
 @media (max-width: 991.98px) {
   .footer-top-row {
     grid-template-columns: repeat(2, 1fr);
@@ -141,15 +154,108 @@
   }
 }
 
+/* ─── Mobile (< 768px) ───────────────────────────────────── */
 @media (max-width: 767.98px) {
+
+  /* Hide desktop layout, show mobile layout */
   .footer-top-row {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
+    display: none;
   }
 
+  .footer-mobile-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Logo + address + phone block */
+  .footer-mobile-contact .footer-logo {
+    margin-bottom: 1.2rem;
+  }
+
+  .footer-mobile-contact .footer-logo img {
+    max-width: 180px;
+  }
+
+  .footer-mobile-contact .footer-address {
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: #DADADA;
+    font-style: normal;
+    margin-bottom: 0.8rem;
+  }
+
+  .footer-mobile-contact .footer-phone {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #DADADA;
+    margin-bottom: 0;
+  }
+
+  /* Industries section */
+  .footer-mobile-industries .footer-col-title {
+    margin-bottom: 1rem;
+  }
+
+  .footer-mobile-industries .footer-link-list {
+    gap: 0.7rem;
+  }
+
+  .footer-mobile-industries .footer-link-list a {
+    font-size: 0.9rem;
+  }
+
+  /* Pages + Ishita two-column grid */
+  .footer-mobile-two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 2rem;
+  }
+
+  .footer-mobile-two-col .footer-col-title {
+    margin-bottom: 1rem;
+  }
+
+  .footer-mobile-two-col .footer-link-list {
+    gap: 0.7rem;
+  }
+
+  .footer-mobile-two-col .footer-link-list a {
+    font-size: 0.9rem;
+  }
+
+  /* Bottom row stacked */
   .footer-bottom-content {
     flex-direction: column;
-    gap: 1rem;
-    text-align: center;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+
+  .copyright-text,
+  .credit-text {
+    font-size: 0.72rem;
+  }
+}
+
+/* ─── Small mobile (< 480px) ────────────────────────────── */
+@media (max-width: 479.98px) {
+  .footer-shell {
+    padding-inline: 0.9rem;
+  }
+
+  .footer-mobile-contact .footer-logo img {
+    max-width: 160px;
+  }
+
+  .footer-mobile-two-col {
+    gap: 1rem 1.5rem;
+  }
+}
+
+/* ─── Wide screens (≥ 1600px) ───────────────────────────── */
+@media (min-width: 1600px) {
+  .footer-shell {
+    max-width: 1520px;
   }
 }
