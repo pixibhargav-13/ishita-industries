@@ -51,20 +51,6 @@ function HeroSection() {
         mediaRef.current.style.opacity = Math.max(opacity, 0)
       }
 
-      // Tilt image: drifts left and rotates
-      if (tiltRef.current) {
-        const xDrift = progress * -60
-        const rotate = progress * -8
-        tiltRef.current.style.transform = `translateX(${xDrift}px) rotate(${rotate}deg)`
-      }
-
-      // Straight image: drifts right and rotates
-      if (straightRef.current) {
-        const xDrift = progress * 50
-        const rotate = progress * 5
-        straightRef.current.style.transform = `translateX(${xDrift}px) rotate(${rotate}deg)`
-      }
-
       // Caption fades out
       if (captionRef.current) {
         captionRef.current.style.opacity = Math.max(1 - progress * 2.5, 0)
