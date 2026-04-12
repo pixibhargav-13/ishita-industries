@@ -95,13 +95,12 @@ function CapabilitiesSectionNew() {
               </div>
 
               <div className="cap-visual-overlay">
-                <p className="cap-visual-index mb-0">01</p>
                 <h3 className="cap-visual-title mb-0">
                   Manufacturing
                   <span className="d-block">Infrastructure</span>
                 </h3>
                 <p className="cap-visual-copy mb-0">
-                  Global standard logistics through volume assembly lines for trusted industrial
+                  Global standard logistics and high-volume assembly lines for tier-one industrial
                   requirements.
                 </p>
                 <div className="cap-visual-meta">

@@ -89,7 +89,7 @@ function HeroSection() {
                 <div className="hero-story d-flex">
                   <div className="hero-story-thumb-wrap">
                     <img
-                      src="https://via.placeholder.com/104x104/6D6F73/FFFFFF?text=Video"
+                      src="/src/Images/manufacturing-infrastructure.png"
                       alt="Manufacturing preview"
                       className="hero-story-thumb"
                     />

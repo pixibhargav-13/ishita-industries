@@ -12,12 +12,14 @@
    ─────────────────────────────────────────────────────────────── */
 .about-header {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
+  grid-template-columns: 1fr 1fr;
   align-items: start;
   gap: clamp(1.5rem, 3.8vw, 4.3rem);
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+  transition:
+    opacity 0.7s ease-out,
+    transform 0.7s ease-out;
 }
 
 .about-header.is-visible {
@@ -42,9 +44,9 @@
 }
 
 .about-intro {
-  max-width: 360px;
+  max-width: 430px;
   padding-top: clamp(1.1rem, 1.9vw, 1.5rem);
-  font-size: clamp(0.88rem, 1.08vw, 1.14rem);
+  font-size: clamp(1rem, 1.08vw, 1.14rem);
   line-height: 1.82;
   color: #666b72;
 }
@@ -58,7 +60,7 @@
   line-height: 1.65;
   letter-spacing: -0.018em;
   text-align: center;
-  color: #3f4349;
+  color: #343434;
   opacity: 0;
   filter: blur(5px);
   transform: translateY(16px);
@@ -83,7 +85,7 @@
 }
 
 .about-highlight-card {
-  min-height: clamp(92px, 10vw, 104px);
+  min-height: clamp(93px, 10vw, 140px);
   border: 1.5px solid #6e7177;
   border-radius: 18px;
   background: transparent;
@@ -114,9 +116,9 @@
 
 .about-highlight-card span {
   max-width: 150px;
-  font-size: clamp(0.72rem, 0.83vw, 0.85rem);
+  font-size: clamp(0.76rem, 0.83vw, 0.85rem);
   line-height: 1.4;
-  color: #50555c;
+  color: #343434;
   transition: color 0.25s ease;
 }
 

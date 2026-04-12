@@ -1,6 +1,6 @@
 .capabilities-section {
   padding: clamp(2.6rem, 5vw, 4.5rem) 0 clamp(2.8rem, 5.2vw, 4.8rem);
-  background-color: #F9F9F9 !important;
+  background-color: #f9f9f9 !important;
 }
 
 .capabilities-shell {
@@ -10,21 +10,21 @@
 
 .capabilities-header {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(240px, 320px);
+  grid-template-columns: 2fr 1fr;
   align-items: end;
   gap: clamp(1.2rem, 3vw, 4rem);
 }
 
 .capabilities-kicker {
-  font-size: clamp(0.44rem, 0.6vw, 0.58rem);
+  font-size: clamp(0.8rem, 0.6vw, 0.58rem);
   line-height: 1.35;
   letter-spacing: 0.32em;
-  color: #8e9298;
+  color: #596061;
 }
 
 .capabilities-title {
   margin-top: clamp(0.4rem, 0.8vw, 0.6rem);
-  font-size: clamp(2.2rem, 3.5vw, 3.45rem);
+  font-size: clamp(3.5rem, 3.5vw, 3.45rem);
   font-weight: 400;
   line-height: 0.98;
   letter-spacing: -0.05em;
@@ -32,12 +32,12 @@
 }
 
 .capabilities-intro {
-  max-width: 300px;
+  max-width: 340px;
   padding-bottom: 0.2rem;
-  font-size: clamp(0.76rem, 0.95vw, 0.9rem);
+  font-size: clamp(1rem, 0.95vw, 0.9rem);
   line-height: 1.35;
   text-align: center;
-  color: #757a80;
+  color: #596061;
 }
 
 .capabilities-grid {
@@ -52,7 +52,7 @@
 }
 
 .capabilities-row-top {
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
 }
 
 .capabilities-row-bottom {
@@ -67,9 +67,8 @@
 
 /* ─── Machining card ─────────────────────────────────────── */
 .cap-card-machining {
-  min-height: 276px;
-  padding: 1rem 1.15rem 1.15rem;
-  background: linear-gradient(180deg, #ffffff 0%, #f3f4f5 100%);
+  min-height: 420px;
+  padding: 2.5rem;
   border: 1px solid #eceff1;
   position: relative;
 }
@@ -78,22 +77,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.4rem;
+  font-size: 0.7rem;
   line-height: 1;
   letter-spacing: 0.18em;
-  color: #8b9096;
+  color: #5f5e5e;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .cap-card-topline span:last-child {
-  padding: 0.16rem 0.36rem;
+  padding: 0.5rem 0.9rem;
   border-radius: 2px;
-  background: #eef1f3;
+  background: #dde4e5;
 }
 
 .cap-card-title {
   margin-top: 0.95rem;
-  font-size: 1.28rem;
+  font-size: 2rem;
   font-weight: 600;
   line-height: 1.1;
   color: #343a40;
@@ -102,23 +102,24 @@
 .cap-stats-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.4rem 1.6rem;
-  margin-top: 2rem;
+  gap: 5.4rem 1.8rem;
+  margin-top: 3rem;
 }
 
 .cap-stat-label {
   display: block;
-  font-size: 0.42rem;
+  font-size: 0.7rem;
   line-height: 1.2;
   letter-spacing: 0.18em;
-  color: #9ea3a8;
+  color: #596061;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
 .cap-stat-value {
   display: block;
   margin-top: 0.38rem;
-  font-size: 0.98rem;
+  font-size: 1.4rem;
   font-weight: 600;
   line-height: 1.2;
   color: #31373d;
@@ -173,16 +174,14 @@
   display: block;
 }
 
-/* ✅ Overlay sits on top of image, bottom-anchored */
 .cap-visual-overlay {
   position: absolute;
   inset: auto 0 0 0;
-  padding: 1.05rem 1.2rem 0.95rem;
+  padding: 3rem;
   background: linear-gradient(
-    180deg,
-    rgba(24, 27, 30, 0) 0%,
-    rgba(22, 24, 27, 0.75) 30%,
-    rgba(14, 16, 19, 0.92) 100%
+    0deg,
+    rgba(45, 52, 53, 0.8) 0%,
+    rgba(45, 52, 53, 0) 100%
   );
   color: #f4f5f6;
   z-index: 2;
@@ -203,11 +202,13 @@
 }
 
 .cap-visual-copy {
-  max-width: 185px;
+  max-width: 350px;
   margin-top: 0.5rem;
-  font-size: 0.58rem;
+  font-size: 0.9rem;
   line-height: 1.35;
-  color: rgba(255, 255, 255, 0.72);
+  color: #ffffffb2 !important;
+  font-weight: 200 !important;
+  letter-spacing: 0.9px;
 }
 
 .cap-visual-meta {
@@ -216,18 +217,25 @@
   margin-top: 0.85rem;
 }
 
+.cap-visual-title span {
+  margin-top: 15px;
+}
+
 .cap-visual-meta span {
-  font-size: 0.42rem;
+  font-size: 0.7rem;
+  margin-top: 10px;
   line-height: 1;
   letter-spacing: 0.14em;
-  color: rgba(255, 255, 255, 0.7);
+  color: #FFFFFF;
+  border: 1px solid #ffffff33;
+  padding: 7px 10px;
 }
 
 /* ─── Metals card ────────────────────────────────────────── */
 .cap-card-metals {
   min-height: 172px;
   padding: 1rem 1.1rem 1.15rem;
-  background: #E4E9EA !important;
+  background: #e4e9ea !important;
 }
 
 .cap-card-section-label {
@@ -429,7 +437,6 @@
   }
 }
 
-
 /* ── Scroll-reveal animations ────────────────────────────────────
    Start states are hidden. useScrollAnimation adds `.is-visible`
    when the element enters the viewport.
@@ -438,7 +445,9 @@
 .capabilities-header {
   opacity: 0;
   transform: translateY(28px);
-  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+  transition:
+    opacity 0.7s ease-out,
+    transform 0.7s ease-out;
 }
 
 .capabilities-header.is-visible {
@@ -450,7 +459,9 @@
 .cap-card {
   opacity: 0;
   transform: translateY(28px) scale(0.97);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
 }
 
 .cap-card.is-visible {
@@ -458,10 +469,18 @@
   transform: translateY(0) scale(1);
 }
 
-.cap-card-machining { transition-delay: 0.1s; }
-.cap-card-visual    { transition-delay: 0.2s; }
-.cap-card-metals    { transition-delay: 0.1s; }
-.cap-card-finishing { transition-delay: 0.2s; }
+.cap-card-machining {
+  transition-delay: 0.1s;
+}
+.cap-card-visual {
+  transition-delay: 0.2s;
+}
+.cap-card-metals {
+  transition-delay: 0.1s;
+}
+.cap-card-finishing {
+  transition-delay: 0.2s;
+}
 
 /* Image inside the visual card zooms subtly on hover */
 .cap-visual-image img {
