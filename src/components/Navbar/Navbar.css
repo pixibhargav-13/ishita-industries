@@ -10,14 +10,36 @@
   transition: padding 0.35s ease, background 0.35s ease, box-shadow 0.35s ease;
 }
 
-/* Compact + frosted glass state after 50px scroll */
-.site-header--scrolled {
-  padding-top: 0.45rem;
-  padding-bottom: 0.45rem;
-  background: rgba(255, 255, 255, 0.88);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  box-shadow: 0 1px 22px rgba(0, 0, 0, 0.07);
+/* Scrolled state — dark compact bar */
+.site-header.scrolled {
+  background-color: #000000;
+  padding-top: clamp(0.6rem, 1vw, 1rem);
+  padding-bottom: clamp(0.6rem, 1vw, 1rem);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.site-header.scrolled .nav-link,
+.site-header.scrolled .icon-button,
+.site-header.scrolled .brochure-btn,
+.site-header.scrolled .menu-btn {
+  color: #ffffff;
+}
+
+.site-header.scrolled .nav-link:hover,
+.site-header.scrolled .nav-link.active {
+  color: #dfdfdf;
+}
+
+.site-header.scrolled .brochure-btn {
+  border-color: #ffffff;
+}
+
+.site-header.scrolled .brand-logo--desktop,
+.site-header.scrolled .brand-logo--mobile,
+.site-header.scrolled .toggle-icon,
+.site-header.scrolled .brochure-icon img,
+.site-header.scrolled .icon-globe img {
+  filter: brightness(0) invert(1);
 }
 
 @font-face {

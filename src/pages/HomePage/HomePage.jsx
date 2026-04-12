@@ -1,4 +1,5 @@
 import Navbar                        from '../../components/Navbar/NavbarRouter'
+import IntroAnimation               from '../../components/IntroAnimation/IntroAnimation'
 import HeroSection                   from './HeroSection'
 import AboutSection                  from './AboutSection'
 import CapabilitiesSectionNew        from './CapabilitiesSectionNew'
@@ -38,6 +39,7 @@ const TICKER_ITEMS_2 = [
 function Homepage() {
   return (
     <>
+      <IntroAnimation />
       <Navbar />
       <HeroSection />
 
