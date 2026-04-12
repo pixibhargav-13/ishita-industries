@@ -82,7 +82,7 @@
   border-bottom: 4px solid #e5e7ea;
 }
 
-.fastener-card:nth-last-child(-n+3) {
+.fastener-card:nth-last-child(-n + 3) {
   border-bottom: none;
 }
 
@@ -197,7 +197,7 @@
     border-bottom: 2px solid #e5e7ea;
   }
 
-  .fastener-card:nth-last-child(-n+2) {
+  .fastener-card:nth-last-child(-n + 2) {
     border-bottom: none;
   }
 

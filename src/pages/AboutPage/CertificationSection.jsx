@@ -32,9 +32,7 @@ function CertificationSection() {
         <div className="cert-grid">
           {certificationsData.map((cert) => (
             <div key={cert.id} className="cert-card-wrapper">
-              <figure className="cert-card">
                 <img src={cert.image} alt={cert.name} className="cert-image" />
-              </figure>
               <h3 className="cert-name mb-0">{cert.name}</h3>
             </div>
           ))}

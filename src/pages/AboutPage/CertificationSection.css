@@ -33,7 +33,7 @@
 }
 
 .cert-intro {
-  padding-top: clamp(3.4rem, 4.7vw, 4.8rem);
+  padding-top: clamp(1.4rem, 1.7vw, 1.8rem);
   font-size: clamp(0.85rem, 0.92vw, 0.95rem);
   line-height: 1.55;
   color: #666b72;
@@ -58,7 +58,7 @@
   background-color: #ffffff;
   border: 1px solid #e8eaec;
   border-radius: 8px;
-  padding: clamp(1.5rem, 3vw, 2rem);
+  padding:0 clamp(1.5rem, 3vw, 2rem);
   margin: 0 0 0.6rem 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.015);
   display: flex;
@@ -79,6 +79,7 @@
   color: #555c63;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  margin-top: 15px;
 }
 
 @media (max-width: 991.98px) {
@@ -102,4 +103,10 @@
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+
+  .cert-title {
+    margin-top: 1.74rem !important;
+    font-size: 2rem !important;
+    letter-spacing: 3px;
+}
 }
