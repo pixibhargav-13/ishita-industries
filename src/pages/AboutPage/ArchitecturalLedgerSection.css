@@ -296,14 +296,14 @@ min-height: clamp(340px, 38vw, 590px);
   font-size: clamp(2rem, 4.5vw, 3rem);
   font-weight: 400;
   line-height: 1.1;
-  color: #31373d;
+  color: #2D3435;
   margin-bottom: clamp(1.5rem, 2.5vw, 2rem);
 }
 
 .ledger-infrastructure-desc {
   font-size: clamp(1.3rem, 1.95vw, 1rem);
   line-height: 1.6;
-  color: #666b72;
+  color: #596061;
   margin-bottom: 1.5rem;
 }
 
@@ -353,7 +353,7 @@ min-height: clamp(340px, 38vw, 590px);
 .caps-number {
   font-size: clamp(1.1rem, 1.2vw, 1.2rem);
   font-weight: 400;
-  color: #596061;
+  color: #5F5E5E;
   margin-bottom: clamp(1.2rem, 1.8vw, 2rem);
 }
 
@@ -419,6 +419,23 @@ min-height: clamp(340px, 38vw, 590px);
   .ledger-inception-row {
     flex-direction: column-reverse;
     align-items: flex-start;
+  }
+.ledger-infrastructure-content{
+  padding-top: 0rem;
+}
+  .ledger-infrastructure {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* 👇 Move image to top */
+  .ledger-infrastructure-image-wrapper {
+    order: -1;
+    margin-bottom: 1.5rem;
+  }
+
+  .ledger-infrastructure-content {
+    order: 1;
   }
 
   .ledger-inception-image{
