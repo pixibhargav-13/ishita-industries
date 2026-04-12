@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react'
 import './UniqueSellingPropositionSection.css'
 
 const uspItems = [
@@ -128,8 +129,35 @@ function Icon({ type }) {
 }
 
 function UniqueSellingPropositionSection() {
+  const sectionRef = useRef(null)
+  const showcaseRef = useRef(null)
+
+  useEffect(() => {
+    const showcase = showcaseRef.current
+    const section = sectionRef.current
+    if (!showcase || !section) return
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            section.classList.add('is-visible')
+            observer.unobserve(entry.target)
+          }
+        })
+      },
+      {
+        threshold: 0.25,
+        rootMargin: '0px 0px -80px 0px',
+      }
+    )
+
+    observer.observe(showcase)
+    return () => observer.disconnect()
+  }, [])
+
   return (
-    <section className="usp-section">
+    <section className="usp-section" ref={sectionRef}>
       <div className="container usp-shell">
         <div className="usp-header">
           <div>
@@ -145,7 +173,7 @@ function UniqueSellingPropositionSection() {
           </p>
         </div>
 
-        <div className="usp-showcase">
+        <div className="usp-showcase" ref={showcaseRef}>
           <div className="usp-wheel" aria-hidden="true">
             {uspItems.map((item, index) => (
               <div key={item.id} className={`usp-fan-card usp-fan-card-${index + 1}`}>
@@ -177,3 +205,4 @@ function UniqueSellingPropositionSection() {
 }
 
 export default UniqueSellingPropositionSection
+
