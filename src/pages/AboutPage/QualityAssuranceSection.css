@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
 
 /* ─── Base ──────────────────────────────────────────────── */
 .quality-assurance-section {
   padding: clamp(3rem, 5.2vw, 4.9rem) 0 clamp(3rem, 5vw, 4.7rem);
-  background: #fcfcfb;
+  background: #fafafa;
 }
 
 .quality-assurance-shell {
@@ -13,19 +13,19 @@
 
 /* ─── Header ─────────────────────────────────────────────── */
 .quality-assurance-header {
-        display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-    gap: clamp(1.5rem, 0vw, 5rem);
+  gap: clamp(1.5rem, 0vw, 5rem);
 }
 
 /* ─── Kicker ─────────────────────────────────────────────── */
 .quality-assurance-kicker {
   text-align: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 0.82rem;
+  font-size: clamp(1rem, 0.72vw, 0.75rem);
   letter-spacing: 4.8px;
   vertical-align: middle;
   text-transform: uppercase;
@@ -34,19 +34,19 @@
 
 /* ─── Title ──────────────────────────────────────────────── */
 .quality-assurance-title {
-  margin-top: 0.95rem;
-  font-family: 'Inter', sans-serif;
+  margin-top: 1.2rem;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: clamp(3rem, 4.35vw, 4.2rem);
+  font-size: clamp(4.2rem, 4.35vw, 4.2rem);
   line-height: 0.93;
   vertical-align: middle;
-  color: #2D3435;
+  color: #2d3435;
 }
 
 /* ─── Copy ───────────────────────────────────────────────── */
 .quality-assurance-copy {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: clamp(0.84rem, 0.95vw, 0.94rem);
@@ -61,7 +61,8 @@
 .quality-assurance-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1.85rem;
+  column-gap: 0.85rem;
+  row-gap: 3rem;
   margin-top: clamp(1.8rem, 2.9vw, 2.35rem);
 }
 
@@ -91,15 +92,15 @@
 
 /* ─── Label ──────────────────────────────────────────────── */
 .quality-assurance-label {
-  margin-top: 0.55rem;
-  font-family: 'Inter', sans-serif;
+  margin-top: 0.9rem;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 0.6rem;
+  font-size: 0.80rem;
   letter-spacing: 1.8px;
   vertical-align: middle;
   text-transform: uppercase;
-  color: #2D3435;
+  color: #2d3435;
   text-align: center;
 }
 
@@ -111,7 +112,6 @@
   gap: 1rem;
   margin-top: clamp(1.5rem, 2.5vw, 2rem);
   padding-top: clamp(1rem, 1.5vw, 1.5rem);
-  border-top: 1px solid #e4e7eb;
 }
 
 .quality-assurance-badge {
@@ -123,7 +123,7 @@
 
 .quality-assurance-badge-image {
   max-width: 100%;
-  max-height: 75px;
+  max-height: 120px;
   display: block;
   object-fit: contain;
 }
@@ -247,7 +247,9 @@
 .quality-assurance-badges {
   opacity: 0;
   transform: translateY(28px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
 }
 
 .quality-assurance-header.is-visible,

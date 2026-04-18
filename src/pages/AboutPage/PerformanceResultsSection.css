@@ -3,7 +3,7 @@
 /* ─── Base ──────────────────────────────────────────────── */
 .performance-results-section {
   padding: clamp(3rem, 5.5vw, 4.9rem) 0 clamp(3rem, 5.2vw, 4.6rem);
-  background-color: #ffffff;
+  background-color: #FAFAFA;
 }
 
 .results-shell {
@@ -26,20 +26,19 @@
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: clamp(1.0rem, 0.72vw, 0.75rem);   /* your original size */
+  font-size: clamp(1rem, 0.72vw, 0.75rem);   /* your original size */
   letter-spacing: 0.1em;
   vertical-align: middle;
   text-transform: uppercase;
   color: #596061;
 }
 
-/* ─── Title: RESULTS THAT MATTER. ───────────────────────── */
 .results-title {
   margin-top: clamp(0.95rem, 1.35vw, 1.2rem);
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: clamp(3.05rem, 4.1vw, 4.18rem);   /* your original size */
+  font-size: clamp(4.05rem, 4.1vw, 4.18rem);
   line-height: 0.98;
   vertical-align: middle;
   color: #2D3435;
@@ -72,32 +71,30 @@
 
 /* ─── Card ───────────────────────────────────────────────── */
 .results-card {
-  background-color: #ffffff;
-  border: 1px solid #b5b9be;
+  background-color: #FAFAFA;
+  border: 1px solid #343434;
   padding: clamp(0.2rem, 0.8vw, 1.2rem);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: clamp(150px, 10vw, 163px);
+  min-height: clamp(180px, 10vw, 163px);
 }
 
-/* ─── Card value: 10+, 100% ──────────────────────────────── */
 .results-card-value {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: clamp(1.1rem, 1.2vw, 1.35rem);    /* your original size */
+  font-size: clamp(1.4rem, 1.2vw, 1.35rem);
   line-height: 1;
   letter-spacing: 0;
   color: #343434;
 }
 
-/* ─── Card label: Material Supported… ───────────────────── */
 .results-card-label {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: clamp(1.05rem, 1.1vw, 1.2rem);    /* your original size */
+  font-size: clamp(1.4rem, 1.1vw, 1.2rem);
   line-height: 1;
   letter-spacing: 0;
   color: #343434;
