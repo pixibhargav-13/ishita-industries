@@ -1,4 +1,5 @@
 .free-to-contact-us-section {
+  background-color: #fafafa ;
   padding: clamp(1rem, 3vw, 2rem) 0 clamp(3rem, 5.2vw, 4.6rem);
 }
 
@@ -13,7 +14,7 @@
 
 .contactus-card {
   position: relative;
-  background-color: #fff;
+  background-color: #fbfbfb  ;
   border: 1px solid #99A2AF33;
   border-radius: 12px;
   padding: 45px 20px 30px;
@@ -24,16 +25,16 @@
 
 /* Apply the imported background grid image and invert it to be light/white */
 .contactus-card::before {
-  content: '';
-  position: absolute;
-  inset: -59px;
-  background-image: url('../../Images/contact-us-grid.png');
-  background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: invert(1);
-  opacity: 1;
-  pointer-events: none;
+    content: '';
+    position: absolute;
+    inset: 25px -90px -90px;
+    background-image: url(/src/Images/contact-us-grid.png);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: invert(1);
+    opacity: 1;
+    pointer-events: none;
 }
 
 .contactus-icon {
@@ -119,7 +120,7 @@
   border: 1px solid #99A2AF33;
   border-radius: 8px;
   padding: 18px 20px;
-  background-color: #fff;
+  background-color: #fbfbfb;
   color: #000000;
   transition: all 0.2s ease;
 }

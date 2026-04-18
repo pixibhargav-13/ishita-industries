@@ -199,7 +199,9 @@
   max-width: 420px;
   font-size: clamp(0.95rem, 1.12vw, 1.7rem);
   line-height: 1.52;
-  color: #5f6166;
+  color: #000000 ;
+  font-weight: 100;
+
 }
 
 .hero-footnote {
