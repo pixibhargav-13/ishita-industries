@@ -5,6 +5,7 @@ import useScrollAnimation from '../../hooks/useScrollAnimation'
 import useCurtainReveal from '../../hooks/useCurtainReveal'
 import metalWeWork from '../../Images/metal-we-work.png'
 import machineIcon from '../../Images/machining-capabilities-icon.png'
+import settingBgIcon from '../../Images/setting-bg-icon.png';
 
 const metals = [
   'Stainless Steel',
@@ -94,9 +95,7 @@ function CapabilitiesSectionNew() {
               </div>
 
               <div className="cap-card-mark" aria-hidden="true">
-                <span />
-                <span />
-                <span />
+                <img src={settingBgIcon} alt="" />
               </div>
             </article>
 

@@ -111,9 +111,9 @@
   transition: color 0.2s ease;
 }
 
-.social-icon svg{
-  width: 18px;
-  height: 18px;
+.social-icon img{
+  width: 20px;
+  height: 20px;
 }
 
 .social-icon:hover {

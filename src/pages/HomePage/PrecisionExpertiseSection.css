@@ -1,12 +1,12 @@
 /* ─── Base ──────────────────────────────────────────────── */
 .precision-section {
   padding: clamp(2.9rem, 5.6vw, 5rem) 0 clamp(3rem, 5.4vw, 4.8rem);
+  background-color: #f9f9f9;
 }
 
 .precision-shell {
   max-width: 1210px;
   padding-inline: clamp(0.85rem, 2.8vw, 1.5rem);
-  background-color: #f9f9f9;
 }
 
 /* ─── Header ─────────────────────────────────────────────── */
@@ -163,6 +163,8 @@
 @media (max-width: 479.98px) {
   .precision-grid {
     grid-template-columns: 1fr;
+    padding: 0px 45px;
+    gap: 35px;
   }
 
   .precision-visual {

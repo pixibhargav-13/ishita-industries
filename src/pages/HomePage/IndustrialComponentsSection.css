@@ -56,8 +56,7 @@
 /* ─── Row (desktop: 3 columns) ──────────────────────────── */
 .industrial-components-row {
   display: grid;
-  grid-template-columns: minmax(180px, 0.9fr) minmax(400px, 2.7fr) minmax(220px,
-      1.15fr);
+  grid-template-columns: minmax(max-content, 2.5fr) 5fr 2.5fr;
   align-items: start;
   gap: 1.5rem;
   padding-top: clamp(2.5rem, 4.5vw, 3.5rem);
@@ -92,6 +91,7 @@
   font-weight: 400;
   color: #31373d;
   letter-spacing: -0.02em;
+  white-space: nowrap;
 }
 
 /* ─── Badges ─────────────────────────────────────────────── */
@@ -100,7 +100,7 @@
   flex-direction: column;
   gap: 1.3em;
   max-width: 680px;
-  padding-left: clamp(2rem, 5vw, 8rem);
+  padding-left: clamp(1rem, 3vw, 4rem);
 }
 
 .industrial-components-badge-row {
@@ -112,7 +112,7 @@
 .industrial-components-badge {
   font-family: 'Inter', sans-serif;
   font-weight: 300;
-  font-size: clamp(1rem, 1vw, 1.2rem);
+  font-size: clamp(0.5rem, 1vw, 1rem);
   color: #000000;
   padding: 0.65rem 1.4rem;
   border: 1px solid #000000;
@@ -250,11 +250,17 @@
   }
 
   .industrial-components-row-title {
-    font-size: 1.3rem;
+    font-size: 2.5rem;
+    padding-top: 5rem;
+  }
+
+  .industrial-components-badges{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
   }
 
   .industrial-components-visual {
-    width: clamp(75px, 24vw, 110px);
+    width: clamp(96px, 50vw, 246px);
   }
 
   .industrial-components-badge {

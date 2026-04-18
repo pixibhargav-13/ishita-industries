@@ -69,3 +69,9 @@
     padding-top: 0;
   }
 }
+
+@media (max-width: 500px) {
+  .reach-title{
+    font-size: clamp(35px, 3.5vw, 50px);
+  }
+}

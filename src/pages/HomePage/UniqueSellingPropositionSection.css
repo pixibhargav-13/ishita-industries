@@ -1,17 +1,17 @@
 .usp-section {
   padding: clamp(3.25rem, 6.4vw, 5.4rem) 0 clamp(3.4rem, 6.5vw, 5.8rem);
+  background-color: #fafafa;
 }
 
 .usp-shell {
-  background-color: #fafafa;
   max-width: 1210px;
   padding-inline: clamp(0.9rem, 2.9vw, 1.65rem);
 }
 
 .usp-header {
-  display: grid;
-  grid-template-columns:1.5fr 1fr;
-  align-items: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: clamp(1.6rem, 4vw, 6rem);
 }
 
@@ -20,6 +20,7 @@
   line-height: 1.2;
   letter-spacing: 0.34em;
   color: #7a7d82;
+  text-align: center;
 }
 
 .usp-title {

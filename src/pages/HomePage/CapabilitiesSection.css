@@ -25,7 +25,7 @@
 
 .capabilities-title {
   margin-top: clamp(1.85rem, 1.4vw, 1.2rem);
-  font-size: clamp(2.35rem, 5vw, 5.01rem);
+  font-size: clamp(2.35rem, 4.7vw, 5.01rem);
   font-weight: 400;
   line-height: 0.98;
   letter-spacing: -0.03em;
@@ -70,8 +70,9 @@
 .cap-card-machining {
   min-height: 420px;
   padding: 2.5rem;
-  border: px solid #eceff1;
+  border: 2px solid #eceff1;
   position: relative;
+  background-color: #FFFFFF;
 }
 
 .cap-card-topline {
@@ -139,18 +140,15 @@
 
 .cap-card-mark {
   position: absolute;
-  right: 0.9rem;
-  bottom: 0.7rem;
-  width: 70px;
+  right: 24%;
+  bottom: 47%;
+  width: 90px;
   height: 70px;
-  opacity: 0.16;
+  opacity: 0.7;
 }
 
-.cap-card-mark span {
-  position: absolute;
-  inset: 0;
-  border: 1px solid #d7dce0;
-  transform: rotate(45deg);
+.cap-card-mark img {
+ height: 160px;
 }
 
 .cap-card-mark span:nth-child(2) {
@@ -243,7 +241,7 @@
 
 /* ─── Metals card ────────────────────────────────────────── */
 .cap-card-metals {
-  min-height: 540px;
+  min-height: 480px;
   padding: 3rem 2.5rem;
   background: #e4e9ea !important;
   border: 1px solid #d0d7db;
@@ -298,7 +296,7 @@
 
 /* ─── Finishing card ─────────────────────────────────────── */
 .cap-card-finishing {
-  min-height: 540px;
+  min-height: 480px;
   padding: 3rem 2.5rem 0 2.5rem;
   background: #FFFFFF;
   border: 1px solid #eceff1;
@@ -316,7 +314,7 @@
   margin-top: 3.15rem;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap:40px;
 }
 
 .cap-finishing-item {
@@ -443,10 +441,13 @@
 
 /* ─── Small mobile (< 576px) ────────────────────────────── */
 @media (max-width: 575.98px) {
-  .capabilities-title {
-    font-size: 1.75rem;
+  .capabilities-title{
+    font-size: clamp(24px, 1.5vw, 30px);
   }
 
+ .cap-visual-overlay{
+  padding: 2rem;
+ }
   .cap-stats-grid,
   .cap-metals-grid {
     grid-template-columns: 1fr 1fr;

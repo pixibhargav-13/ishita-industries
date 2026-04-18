@@ -1,9 +1,9 @@
 .about-section {
   padding: clamp(3rem, 6vw, 5.1rem) 0 clamp(3.1rem, 5.5vw, 5rem);
+    background-color: #fafafa;
 }
 
 .about-shell {
-  background-color: #fafafa;
   max-width: 1210px;
   padding-inline: clamp(0.85rem, 2.8vw, 1.5rem);
 }
@@ -187,6 +187,7 @@
 
   .about-title {
     font-size: 2.15rem;
+    text-align: center;
   }
 
   .about-body {

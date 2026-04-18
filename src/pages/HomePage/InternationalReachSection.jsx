@@ -1,5 +1,5 @@
 import "./InternationalReachSection.css";
-import dummyMapImage from "../../assets/hero.png";
+import worldMap from '../../Images/world-map.png'
 
 function InternationalReachSection() {
   return (
@@ -16,7 +16,7 @@ function InternationalReachSection() {
 
         <div className="reach-map-container">
           <img
-            src={dummyMapImage}
+            src={worldMap}
             alt="International Reach Map"
             className="reach-map-image"
           />
