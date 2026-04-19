@@ -44,17 +44,39 @@ export function splitToWords(element) {
     return [...element.querySelectorAll('.anim-word')]
   }
 
-  const text = element.innerText.trim()
   element.dataset.wordSplit = 'true'
-  element.dataset.originalText = text
+  element.dataset.originalHtml = element.innerHTML
 
-  element.innerHTML = text
-    .split(' ')
-    .map(
-      (word) =>
-        `<span class="anim-clip"><span class="anim-word">${word}</span></span>`
-    )
-    .join(' ')
+  const walk = document.createTreeWalker(element, NodeFilter.SHOW_TEXT, null, false)
+  const textNodes = []
+  let node
+  while ((node = walk.nextNode())) {
+    if (node.nodeValue.trim().length > 0) {
+      textNodes.push(node)
+    }
+  }
+
+  textNodes.forEach((textNode) => {
+    const parent = textNode.parentNode
+    const words = textNode.nodeValue.split(/(\s+)/)
+    const fragment = document.createDocumentFragment()
+
+    words.forEach((word) => {
+      if (word.trim().length > 0) {
+        const clip = document.createElement('span')
+        clip.className = 'anim-clip'
+        const inner = document.createElement('span')
+        inner.className = 'anim-word'
+        inner.textContent = word
+        clip.appendChild(inner)
+        fragment.appendChild(clip)
+      } else {
+        fragment.appendChild(document.createTextNode(word))
+      }
+    })
+
+    parent.replaceChild(fragment, textNode)
+  })
 
   return [...element.querySelectorAll('.anim-word')]
 }
@@ -66,10 +88,10 @@ export function splitToWords(element) {
  */
 export function restoreWords(element) {
   if (!element || element.dataset.wordSplit !== 'true') return
-  const original = element.dataset.originalText ?? element.innerText
+  const original = element.dataset.originalHtml ?? element.innerHTML
   element.innerHTML = original
   delete element.dataset.wordSplit
-  delete element.dataset.originalText
+  delete element.dataset.originalHtml
 }
 
 
