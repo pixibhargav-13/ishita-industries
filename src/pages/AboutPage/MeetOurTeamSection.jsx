@@ -6,7 +6,7 @@ import chintanImage from '../../Images/chintan.png'
 import rajImage     from '../../Images/raj.png'
 import useScrollAnimation from '../../hooks/useScrollAnimation'
 import useCurtainReveal   from '../../hooks/useCurtainReveal'
-
+import linkedIn from '../../Images/meet-out-team-linkedin.png'
 const teamMembers = [
   { name: 'Hitesh Ajudiya', role: 'Director Finance',    image: hiteshImage  },
   { name: 'Ravi Patel',     role: 'Director Marketing',  image: raviImage    },
@@ -57,7 +57,7 @@ function MeetOurTeamSection() {
 
                 <button type="button" className="team-card-link" aria-label={`Open ${member.name} profile`}>
                   <span className="team-card-linkedin" aria-hidden="true">
-                    in
+                    <img src={linkedIn}/>
                   </span>
                 </button>
               </div>

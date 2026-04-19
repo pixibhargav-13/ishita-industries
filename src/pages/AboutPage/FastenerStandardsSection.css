@@ -64,7 +64,7 @@
 .fastener-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  column-gap: clamp(1rem, 2vw, 1.5rem);
+  column-gap:clamp(1rem, 1.5vw, 2rem);
 row-gap: 2.5rem;
   background-color: transparent;
 }

@@ -17,14 +17,14 @@
 
 .about-infra-kicker {
   text-align: center;
-  font-size: clamp(1rem, 0.72vw, 0.75rem);
+    font-size: clamp(1.05rem, 0.8vw, 0.86rem);
   line-height: 1.2;
   letter-spacing: 0.38em;
-  color: #8a8e93;
+    color: #596061;
 }
 
 .about-infra-title {
-  margin-top: 0.95rem;
+margin-top: clamp(1.85rem, 1.4vw, 1.2rem);
   font-size: clamp(4.7rem, 4.45vw, 4.3rem);
   font-weight: 400;
   line-height: 0.93;
@@ -131,7 +131,7 @@
   min-height: 100px;
   border: 1px solid #9098a0b2;
   border-radius: 10px;
-  background: #fff;
+  background: #FAFAFA;
   display: grid;
   place-items: center;
   text-align: center;

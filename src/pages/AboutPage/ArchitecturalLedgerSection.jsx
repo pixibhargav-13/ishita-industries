@@ -5,7 +5,7 @@ import utilityOne from '../../Images/systematic-utility-one.png'
 import utilityTwo from '../../Images/systematic-utility-two.png'
 import utilityThree from '../../Images/systematic-utility-three.png'
 import utilityFour from '../../Images/systematic-utility-four.png'
-
+import correct from '../../Images/about-architecture-ledger-icon.png'
 const applicationsList = [
   { id: 1, text: 'Automated Fabrications', icon: (
   <img src={utilityOne}/>
@@ -116,10 +116,7 @@ function ArchitecturalLedgerSection() {
                 <span className="author-name">GLOBAL INFRASTRUCTURE CORP</span>
               </div>
             </div>
-            {/* Huge watermark shape */}
-            <svg className="ledger-watermark" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2l2.4 2.4L18 4.1l.3 3.4 3.2 1.3-1.6 2.9.9 3.3-3.1 1.6-1.1 3.2-3.4-.6L12 21.8l-2.6-2.6-3.4.6-1.1-3.2-3.1-1.6.9-3.3-1.6-2.9 3.2-1.3.3-3.4 3.6.3L12 2zm-.9 13.6l6.4-6.4-1.4-1.4-5 5-2.6-2.6-1.4 1.4 4 4z"/>
-            </svg>
+            <img className="ledger-watermark" src={correct}/>
           </article>
         </div>
 

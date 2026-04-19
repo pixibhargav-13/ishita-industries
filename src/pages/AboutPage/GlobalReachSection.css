@@ -13,7 +13,7 @@
 
 /* ─── Header ─────────────────────────────────────────────── */
 .global-reach-header {
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: clamp(1.5rem, 4vw, 5rem);
@@ -55,7 +55,8 @@
   margin-bottom: clamp(3rem, 4vw, 4rem);
   min-height: clamp(320px, 45vw, 520px);
   background-color: #c8d4de;
-  overflow: visible; /* allow ship overflow */
+  overflow: visible;
+  /* allow ship overflow */
   margin-top: 9rem;
 }
 
@@ -101,17 +102,15 @@
   bottom: 0;
   width: 100%;
   height: 55%;
-  background: linear-gradient(
-    to top,
-    rgba(16, 26, 38, 0.97) 0%,
-    rgba(16, 26, 38, 0.75) 40%,
-    transparent 100%
-  );
+  background: linear-gradient(to top,
+      rgba(16, 26, 38, 0.97) 0%,
+      rgba(16, 26, 38, 0.75) 40%,
+      transparent 100%);
   z-index: 2;
   border-radius: 12px;
 }
 
-.global-reach-world-content{
+.global-reach-world-content {
   padding-right: 0;
 }
 
@@ -169,7 +168,7 @@
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   align-items: flex-start;
-  gap: clamp(2rem, 4vw, 5rem);
+  gap: clamp(1rem, 2vw, 3rem);
 }
 
 .global-reach-map-image {
@@ -189,7 +188,7 @@
 .global-reach-flags-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0.4rem;
+  gap: 1em;
   margin-top: 2rem;
 }
 
@@ -239,6 +238,7 @@
     grid-template-columns: 1fr;
   }
 }
+
 /* ── Scroll-reveal states ───────────────────────────────────── */
 .global-reach-header,
 .global-reach-banner-container,
