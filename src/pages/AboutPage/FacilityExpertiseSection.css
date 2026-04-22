@@ -40,7 +40,7 @@
 .facility-right-col {
   display: flex;
   flex-direction: column;
-  gap: 3.2em;
+  gap: 2.5em;
 }
 
 /* ─── Cards Base ────────────────────────────────────────── */
@@ -281,7 +281,7 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background-color: rgba(45, 52, 53, 0.45);
+  background-color:rgba(45, 52, 53, 0.1)
 }
 
 .iso-text {

@@ -73,7 +73,7 @@
   left: 14px;
   right: 14px;
   bottom: 14px;
-  height: 74px;
+  height: 54px;
   padding: 16px 17px;
   display: flex;
   align-items: center;
@@ -82,7 +82,7 @@
   border: 1px solid #ffffff;
   border-radius: 14px;
   background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(20px);
 }
 
@@ -91,7 +91,7 @@
 }
 
 .team-card-name {
-  font-size: 0.96rem;
+  font-size: 0.8rem;
   font-weight: 500;
   line-height: 1.15;
   color: #fbf8f2;
