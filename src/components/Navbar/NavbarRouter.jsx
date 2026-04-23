@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import './Navbar.css'
 import companyLogo from '../../Images/ishita-navbar-logo.png'
 import companyLogoMobile from '../../Images/ishita-navbar-logo-mobile.png'
@@ -10,13 +10,16 @@ import ToggleLogo from '../../Images/navbar-menu-toggle-logo.png'
 const navLinks = [
   { label: 'Home', to: '/' },
   { label: 'About', to: '/about' },
-  { label: 'Product', to: '#' },
-  { label: 'Quality', to: '#' },
+  { label: 'Product', to: '/product' },
+  { label: 'Quality', to: '/quality' },
+  { label: 'Import/Export', to: '/import-export' },
 ]
 
 function NavbarRouter() {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const location = useLocation()
+  const isImportExport = location.pathname === '/import-export'
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,7 +33,7 @@ function NavbarRouter() {
   const handleNavClick = () => setIsOpen(false)
 
   return (
-    <header className={`site-header${isScrolled ? ' scrolled' : ''}`}>
+    <header className={`site-header${isScrolled ? ' scrolled' : ''}${isImportExport ? ' theme-transparent' : ''}`}>
       <nav className="navbar navbar-expand-lg p-0">
         <div className="container nav-shell">
           <NavLink

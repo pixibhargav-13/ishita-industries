@@ -4,7 +4,7 @@ import linkedin from '../../Images/footer-linkedin.png'
 import facebook from '../../Images/footer-facebook.png'
 import twitter from '../../Images/footer-twitter.png'
 import pinterest from '../../Images/footer-pinterest.png'
-
+import { Link } from 'react-router-dom'
 
 const footerLinks = {
   about: [
@@ -21,7 +21,11 @@ const footerLinks = {
     'Forging', 'Milling', 'Broachinig', 'Stamping',
   ],
   pages: [
-    'Home', 'About', 'Grades', 'Products', 'Quality',
+    { name: 'Home', path: '/' },
+    { name: 'About', path: '/about' },
+    { name: 'Grades', path: '#' },
+    { name: 'Products', path: '/product' },
+    { name: 'Quality', path: '/quality' },
   ],
   ishita: [
     'Certificates', 'Contact', 'Export', "FAQ's", 'Process',
@@ -127,7 +131,7 @@ function Footer() {
               <h4 className="footer-col-title">Pages</h4>
               <ul className="footer-link-list">
                 {footerLinks.pages.map((link) => (
-                  <li key={link}><a href="#">{link}</a></li>
+                  <li key={link.name}><Link to={link.path}>{link.name}</Link></li>
                 ))}
               </ul>
             </div>
