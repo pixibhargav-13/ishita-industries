@@ -1,21 +1,21 @@
 .architectural-ledger-section {
   padding: clamp(3rem, 5.5vw, 4.9rem) 0 clamp(3rem, 5.2vw, 4.6rem);
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 
 .ledger-shell {
   max-width: 1250px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 0px !important;
 }
 
-.ledger-capabilities-section .ledger-shell{
-  background-color: #FAFAFA;
+.ledger-capabilities-section .ledger-shell {
+  background-color: #fafafa;
   max-width: 1125px;
 }
 
 .ledger-header {
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: clamp(1.5rem, 4vw, 5rem);
@@ -26,20 +26,20 @@
   text-align: center;
   font-size: clamp(1.1rem, 0.72vw, 0.75rem);
   line-height: 1.2;
-  letter-spacing: 0.1em; 
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #596061;
-  font-family: 'Inter';
+  font-family: "Inter";
 }
 
 .ledger-title {
   margin-top: clamp(2.2rem, 1.35vw, 1.2rem);
-  font-size:clamp(1.2rem, 2.5vw, 3.5rem);
+  font-size: clamp(1.2rem, 2.5vw, 3.5rem);
   font-weight: 400;
   line-height: 0.98;
   letter-spacing: 1px;
-  color: #2D3435;
-  font-family: 'Inter';
+  color: #2d3435;
+  font-family: "Inter";
 }
 
 .ledger-intro {
@@ -74,15 +74,15 @@
 /* 01 Inception */
 .ledger-card--inception {
   grid-column: span 7;
-  padding : clamp(2rem, 3.5vw, 3.5rem) clamp(2rem, 3.5vw, 3.5rem);
-  border-top: 2px solid #ACB3B41A !important;
+  padding: clamp(2rem, 3.5vw, 3.5rem) clamp(2rem, 3.5vw, 3.5rem);
+  border-top: 2px solid #acb3b41a !important;
 }
 
 .ledger-inception-title {
   font-size: clamp(2rem, 3.5vw, 3.5rem);
   font-weight: 400;
   line-height: 1.15;
-  color: #2D3435;
+  color: #2d3435;
   max-width: 70%;
 }
 
@@ -91,12 +91,12 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: 2rem;
-  margin-top: auto; 
+  margin-top: auto;
 }
 
 .ledger-inception-desc {
-  flex: 0 0 45%; 
-  font-size: clamp(1.09rem, 1vw, 1.1rem); 
+  flex: 0 0 45%;
+  font-size: clamp(1.09rem, 1vw, 1.1rem);
   line-height: 1.7;
   color: #596061;
   margin-bottom: 0.5rem;
@@ -105,8 +105,8 @@
 }
 
 .ledger-inception-image-wrapper {
-  flex: 0 0 52%; 
-  aspect-ratio: 1.9; 
+  flex: 0 0 52%;
+  aspect-ratio: 1.9;
   overflow: hidden;
 }
 
@@ -118,7 +118,7 @@
   border-radius: 8px;
 }
 
-.ledger-card-content{
+.ledger-card-content {
   display: flex;
   flex-direction: column;
 }
@@ -131,13 +131,14 @@
 }
 
 .ledger-number--dark {
-  color: #FAF7F7;
+  color: #faf7f7;
+  font-weight: 100 !important;
 }
 
 .ledger-applications-title {
   font-size: clamp(2rem, 1.4vw, 1.5rem);
-  font-weight: 400;
-  color: #FAF7F7;
+  font-weight: 400 !important;
+  color: #faf7f7;
   margin-bottom: 2.5rem;
 }
 
@@ -168,24 +169,24 @@
 }
 
 .app-text {
-  font-size: clamp(1.0rem, 0.8vw, 0.85rem);
-  color: #FAF7F7;
+  font-size: clamp(1.15rem, 0.8vw, 0.85rem);
+  color: #faf7f7;
   font-weight: 400;
 }
 
 /* 03 Saga */
 .ledger-card--saga {
   grid-column: span 5;
-  background-color: #F2F4F4;
+  background-color: #f2f4f4;
   padding: clamp(2rem, 3.5vw, 3.5rem) clamp(2rem, 3.5vw, 3.5rem);
-min-height: clamp(340px, 38vw, 590px);
-border: 1px solid #ACB3B433;
+  min-height: clamp(340px, 38vw, 590px);
+  border: 1px solid #acb3b433;
 }
 
 .ledger-saga-title {
   font-size: clamp(1.1rem, 2.3vw, 1.5rem);
   font-weight: 400;
-  color: #2D3435;
+  color: #2d3435;
   margin-bottom: 1.2rem;
 }
 
@@ -242,7 +243,7 @@ border: 1px solid #ACB3B433;
   min-height: clamp(340px, 38vw, 440px);
   position: relative;
   overflow: hidden;
-  border:1px solid #ACB3B433;
+  border: 1px solid #acb3b433;
 }
 
 .ledger-satisfaction-content {
@@ -251,9 +252,9 @@ border: 1px solid #ACB3B433;
 }
 
 .ledger-quote {
-  font-size: clamp(1.0rem, 0.92vw, 0.95rem);
+  font-size: clamp(1rem, 0.92vw, 0.95rem);
   line-height: 1.6;
-  color: #2D3435;
+  color: #2d3435;
   margin-bottom: clamp(2rem, 3vw, 3rem);
   font-weight: 400;
 }
@@ -276,10 +277,10 @@ border: 1px solid #ACB3B433;
 }
 
 .author-name {
-  font-size: clamp(1.10rem, 0.72vw, 0.75rem);
+  font-size: clamp(1.1rem, 0.72vw, 0.75rem);
   font-weight: 400;
   letter-spacing: 0.08em;
-  color: #2D3435;
+  color: #2d3435;
   text-transform: uppercase;
 }
 
@@ -288,7 +289,7 @@ border: 1px solid #ACB3B433;
   bottom: 5%;
   right: 2%;
   width: clamp(120px, 18vw, 100px);
-  color: rgba(0,0,0,0.03);
+  color: rgba(0, 0, 0, 0.03);
   z-index: 1;
 }
 
@@ -312,7 +313,7 @@ border: 1px solid #ACB3B433;
   font-size: clamp(2rem, 4.5vw, 2.9rem);
   font-weight: 400;
   line-height: 1.1;
-  color: #2D3435;
+  color: #2d3435;
   margin-bottom: clamp(1.5rem, 2.5vw, 2rem);
 }
 
@@ -330,7 +331,7 @@ border: 1px solid #ACB3B433;
 .ledger-infrastructure-image-wrapper {
   width: 100%;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* slight subtle shadow */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* slight subtle shadow */
 }
 
 .ledger-infrastructure-image {
@@ -369,7 +370,7 @@ border: 1px solid #ACB3B433;
 .caps-number {
   font-size: clamp(1.4rem, 1.6vw, 1.8rem);
   font-weight: 400;
-  color: #5F5E5E;
+  color: #5f5e5e;
   margin-bottom: clamp(1.2rem, 1.8vw, 2rem);
 }
 
@@ -378,14 +379,24 @@ border: 1px solid #ACB3B433;
   font-weight: 400;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #2D3435;
+  color: #2d3435;
   margin-bottom: clamp(0.8rem, 1.2vw, 1.2rem);
 }
 
 .caps-desc {
-  font-size: clamp(1.0rem, 0.95vw, 1rem); /* Standard reading size */
+  font-size: clamp(1rem, 0.95vw, 1rem); /* Standard reading size */
   line-height: 1.65;
   color: #596061;
+}
+
+@media (max-width: 1190px) and (min-width: 100px) {
+  .ledger-infrastructure-title {
+    font-size: clamp(2rem, 4.5vw, 2.7rem);
+  }
+
+  .ledger-kicker{
+    text-align: left;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -436,9 +447,9 @@ border: 1px solid #ACB3B433;
     flex-direction: column-reverse;
     align-items: flex-start;
   }
-.ledger-infrastructure-content{
-  padding-top: 0rem;
-}
+  .ledger-infrastructure-content {
+    padding-top: 0rem;
+  }
   .ledger-infrastructure {
     display: flex;
     flex-direction: column;
@@ -454,8 +465,8 @@ border: 1px solid #ACB3B433;
     order: 1;
   }
 
-  .ledger-inception-image{
-        width: 85%;
+  .ledger-inception-image {
+    width: 85%;
     height: 100%;
     object-fit: contain;
     display: block;
@@ -469,7 +480,7 @@ border: 1px solid #ACB3B433;
     width: 100%;
     max-width: 300px;
   }
-  
+
   .ledger-saga-stats {
     flex-direction: column;
   }
