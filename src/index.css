@@ -33,7 +33,6 @@ a {
    ─────────────────────────────────────────────────────────────── */
 .anim-clip {
   display: inline-block;
-  overflow: hidden;
   vertical-align: bottom;
 }
 

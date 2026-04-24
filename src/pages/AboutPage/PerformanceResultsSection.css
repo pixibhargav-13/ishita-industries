@@ -100,6 +100,18 @@
   color: #343434;
 }
 
+@media (max-width: 1600px) and (min-width: 1465px) {
+  .results-shell {
+    max-width: 1325px;
+  }
+}
+
+@media (max-width: 1465px) and (min-width: 1400px) {
+  .results-shell {
+    max-width: 1260px;
+  }
+}
+
 /* ─── Tablet (< 992px) ───────────────────────────────────── */
 @media (max-width: 991.98px) {
   .results-header {
