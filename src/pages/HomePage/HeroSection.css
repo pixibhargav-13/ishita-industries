@@ -36,8 +36,12 @@
 }
 
 @keyframes heroFadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes heroSlideInRight {
@@ -199,9 +203,8 @@
   max-width: 420px;
   font-size: clamp(0.95rem, 1.12vw, 1.7rem);
   line-height: 1.52;
-  color: #000000 ;
+  color: #000000;
   font-weight: 100;
-
 }
 
 .hero-footnote {
@@ -226,7 +229,7 @@
   display: block;
   user-select: none;
   -webkit-user-drag: none;
-  filter: drop-shadow(0 15px 35px rgba(0,0,0,0.12));
+  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.12));
 }
 
 .hero-caption {
@@ -235,6 +238,24 @@
   color: #5c5f63;
   margin-top: 0.25rem;
   font-weight: 300;
+}
+
+@media (max-width: 1600px) and (min-width: 1520px) {
+  .hero-shell {
+    max-width: 1500px;
+  }
+}
+
+@media (max-width: 1520px) and (min-width: 1465px) {
+  .hero-shell {
+    max-width: 1400px;
+  }
+}
+
+@media (max-width: 1465px) and (min-width: 1400px) {
+  .hero-shell {
+    max-width: 1360px;
+  }
 }
 
 @media (min-width: 1200px) {
