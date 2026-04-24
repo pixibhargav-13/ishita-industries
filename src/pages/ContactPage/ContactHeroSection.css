@@ -36,3 +36,39 @@
   max-width: 800px;
   margin-top: clamp(1.25rem, 2.5vw, 2.25rem);
 }
+
+@media (min-width: 576px) {
+  .contact-hero-container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-hero-container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact-hero-container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact-hero-container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .contact-hero-container {
+    max-width: 1320px;
+  }
+}
+
+@media (max-width: 1600px) and (min-width: 1465px) {
+  .contact-hero-container {
+    max-width: 1325px;
+  }
+}

@@ -12,6 +12,7 @@ const navLinks = [
   { label: 'About', to: '/about' },
   { label: 'Product', to: '/product' },
   { label: 'Quality', to: '/quality' },
+  { label: 'Environment', to: '/environment' },
   { label: 'Import/Export', to: '/import-export' },
   { label: 'Contact', to: '/contact' },
 ]

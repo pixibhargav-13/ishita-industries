@@ -116,3 +116,38 @@
     grid-template-columns: 1fr;
   }
 }
+@media (min-width: 576px) {
+  .product-extrusion-shell {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .product-extrusion-shell {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .product-extrusion-shell {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .product-extrusion-shell {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .product-extrusion-shell {
+    max-width: 1320px;
+  }
+}
+
+@media (max-width: 1600px) and (min-width: 1465px) {
+  .product-extrusion-shell {
+    max-width: 1325px;
+  }
+}

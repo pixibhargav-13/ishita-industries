@@ -123,3 +123,38 @@
   opacity: 1;
   transform: translateY(0);
 }
+@media (min-width: 576px) {
+  .quality-equip-shell {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .quality-equip-shell {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .quality-equip-shell {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .quality-equip-shell {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .quality-equip-shell {
+    max-width: 1320px;
+  }
+}
+
+@media (max-width: 1600px) and (min-width: 1465px) {
+  .quality-equip-shell {
+    max-width: 1325px;
+  }
+}

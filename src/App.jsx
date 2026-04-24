@@ -6,6 +6,7 @@ import ProductDetailsPage from './pages/ProductDetailsPage/ProductDetailsPage'
 import QualityPage from './pages/QualityPage/QualityPage'
 import ImportExportPage from './pages/ImportExportPage/ImportExportPage'
 import ContactPage from './pages/ContactPage/ContactPage'
+import EnvironmentPage from './pages/EnvironmentPage/EnvironmentPage'
 import ScrollProgressBar from './components/ScrollProgressBar/ScrollProgressBar'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/product" element={<ProductPage />} />
         <Route path="/product/electric-pin" element={<ProductDetailsPage />} />
         <Route path="/quality" element={<QualityPage />} />
+        <Route path="/environment" element={<EnvironmentPage />} />
         <Route path="/import-export" element={<ImportExportPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
