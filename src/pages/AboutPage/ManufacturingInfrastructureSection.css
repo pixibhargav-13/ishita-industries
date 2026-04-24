@@ -43,7 +43,7 @@
 .about-infra-visual-card {
   position: relative;
   margin-top: clamp(2.5rem, 3.5vw, 3.2rem);
-  height: clamp(400px, 45vw, 620px);
+  height: clamp(400px, 49vw, 664px);
   border-radius: 16px;
   overflow: hidden;
 }

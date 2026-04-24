@@ -13,6 +13,7 @@ const navLinks = [
   { label: 'Product', to: '/product' },
   { label: 'Quality', to: '/quality' },
   { label: 'Import/Export', to: '/import-export' },
+  { label: 'Contact', to: '/contact' },
 ]
 
 function NavbarRouter() {
