@@ -23,7 +23,7 @@
 }
 
 .ledger-kicker {
-  text-align: center;
+  text-align: left;
   font-size: clamp(1.1rem, 0.72vw, 0.75rem);
   line-height: 1.2;
   letter-spacing: 0.1em;
@@ -163,9 +163,18 @@
 }
 
 .app-icon {
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   color: #8c8f94;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .app-text {
@@ -387,6 +396,36 @@
   font-size: clamp(1rem, 0.95vw, 1rem); /* Standard reading size */
   line-height: 1.65;
   color: #596061;
+}
+
+@media (max-width: 1800px) and (min-width: 1400px) {
+ .ledger-infrastructure-title{
+  font-size: clamp(2rem, 4.5vw, 2.8rem);
+ }
+
+ .ledger-inception-title{
+  font-size: clamp(2rem, 3.5vw, 3.2rem);
+ }
+}
+
+@media (max-width: 1600px) and (min-width: 1465px) {
+  .ledger-shell {
+    max-width: 1355px;
+  }
+
+  .ledger-capabilities-section .ledger-shell{
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1465px) and (min-width: 1400px) {
+  .ledger-shell {
+    max-width: 1290px;
+  }
+
+  .ledger-capabilities-section .ledger-shell{
+    max-width: 1240px;
+  }
 }
 
 @media (max-width: 1190px) and (min-width: 100px) {

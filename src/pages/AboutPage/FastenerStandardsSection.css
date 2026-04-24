@@ -109,6 +109,18 @@ row-gap: 2.5rem;
   white-space: nowrap;
 }
 
+@media (max-width: 1600px) and (min-width: 1465px) {
+  .fastener-shell {
+    max-width: 1050px;
+  }
+}
+
+@media (max-width: 1465px) and (min-width: 1400px) {
+  .fastener-shell {
+    max-width: 985px;
+  }
+}
+
 /* ─── Tablet (< 992px) ───────────────────────────────────── */
 @media (max-width: 991.98px) {
   .fastener-header {

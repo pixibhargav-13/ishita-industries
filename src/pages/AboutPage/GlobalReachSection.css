@@ -201,6 +201,18 @@
   object-fit: cover;
 }
 
+@media (max-width: 1600px) and (min-width: 1465px) {
+  .global-reach-shell {
+    max-width: 1325px;
+  }
+}
+
+@media (max-width: 1465px) and (min-width: 1400px) {
+  .global-reach-shell {
+    max-width: 1260px;
+  }
+}
+
 @media (max-width:2500px) and (min-width:1400px){
   .global-reach-world-title{
     font-size: clamp(2.2rem, 3vw, 2rem);

@@ -258,6 +258,18 @@
   object-fit: contain;
 }
 
+@media (max-width: 1600px) and (min-width: 1465px) {
+  .about-hero-shell {
+    max-width: 1325px;
+  }
+}
+
+@media (max-width: 1465px) and (min-width: 1400px) {
+  .about-hero-shell {
+    max-width: 1260px;
+  }
+}
+
 /* ─── Tablet (< 992px) ───────────────────────────────────── */
 @media (max-width: 991.98px) {
   .about-hero-title {
