@@ -14,6 +14,7 @@ const navLinks = [
   { label: 'Quality', to: '/quality' },
   { label: 'Environment', to: '/environment' },
   { label: 'Import/Export', to: '/import-export' },
+  { label: 'Sustainability', to: '/sustainability' },
   { label: 'Contact', to: '/contact' },
 ]
 

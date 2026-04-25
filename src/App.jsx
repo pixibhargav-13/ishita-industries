@@ -7,6 +7,7 @@ import QualityPage from './pages/QualityPage/QualityPage'
 import ImportExportPage from './pages/ImportExportPage/ImportExportPage'
 import ContactPage from './pages/ContactPage/ContactPage'
 import EnvironmentPage from './pages/EnvironmentPage/EnvironmentPage'
+import SustainabilityPage from './pages/SustainabilityPage/SustainabilityPage'
 import ScrollProgressBar from './components/ScrollProgressBar/ScrollProgressBar'
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/environment" element={<EnvironmentPage />} />
         <Route path="/import-export" element={<ImportExportPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/sustainability" element={<SustainabilityPage />} />
       </Routes>
     </>
   )
