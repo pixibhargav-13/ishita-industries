@@ -1,5 +1,5 @@
 .product-precision-section {
-  background-color: #F9F9F9;
+  background-color: #ffffff;
   padding: clamp(3rem, 5.5vw, 4.9rem) 0 clamp(3rem, 5.2vw, 4.6rem);
 }
 
@@ -117,6 +117,7 @@
     grid-template-columns: 1fr;
   }
 }
+
 @media (min-width: 576px) {
   .product-precision-shell {
     max-width: 540px;

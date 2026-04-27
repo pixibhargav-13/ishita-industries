@@ -2,7 +2,7 @@
 
 .assembly-advantages-section {
   background-color: #2D3435;
-  padding: clamp(4rem, 8vw, 7.5rem) 0;
+  padding: clamp(3rem, 5.5vw, 4.9rem) 0 clamp(3rem, 5.2vw, 4.6rem);
   color: #FFFFFF;
 }
 
@@ -29,8 +29,8 @@
   font-weight: 600;
   font-size: clamp(2rem, 3.5vw, 3.2rem);
   color: #FFFFFF;
-  margin-bottom: clamp(1.2rem, 2vw, 1.8rem);
   letter-spacing: -0.02em;
+  margin-bottom: 50px;
 }
 
 .advantages-subtitle {
@@ -40,6 +40,7 @@
   line-height: 1.7;
   color: #ACB3B4;
   margin-bottom: clamp(2.5rem, 4vw, 3.5rem);
+  margin-top: clamp(1rem, 1.75vw, 1.25rem);
   max-width: 540px;
 }
 
@@ -76,9 +77,12 @@
 }
 
 .advantages-image-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   opacity: 0;
-  transform: translateX(30px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transform: translateX(40px);
+  transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1), transform 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .advantages-image-col.is-visible {
@@ -88,29 +92,39 @@
 
 .advantages-image-wrapper {
   position: relative;
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+  width: 100%;
+  max-width: 640px;
+  background-color: #5F5E5E1A;
+  /* Slightly darker than section bg for framing */
+  padding: clamp(20px, 3vw, 25px);
+  /* Increased padding for more breathing room */
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.advantages-image-wrapper::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border: 1px solid rgba(255,255,255,0.1);
-  pointer-events: none;
+.advantages-img-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  /* Square-ish as seen in the reference */
+  overflow: hidden;
+  border-radius: 2px;
+  /* Subtle radius for the image itself */
 }
 
 .advantages-img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   object-fit: cover;
-  transition: transform 0.8s ease;
+  transition: transform 1.2s cubic-bezier(0.2, 0, 0, 1);
 }
 
 .advantages-image-wrapper:hover .advantages-img {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 @media (max-width: 991.98px) {
@@ -126,6 +140,8 @@
   .advantages-image-col {
     order: 1;
     transform: translateY(30px);
+    padding: 20px;
+    /* Less padding on mobile */
   }
 
   .advantages-image-col.is-visible {

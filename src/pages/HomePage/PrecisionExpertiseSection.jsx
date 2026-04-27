@@ -3,7 +3,7 @@ import './PrecisionExpertiseSection.css'
 import precisionMmachineExpertiseOne from '../../Images/precision-machine-expertise-one.png'
 import precisionMachineExpertiseTwo from '../../Images/precision-machine-expertise-two.png'
 
-function PrecisionExpertiseSection() {
+function PrecisionExpertiseSection({ className = "" }) {
   const sectionRef = useRef(null)
 
   useEffect(() => {
@@ -30,7 +30,7 @@ function PrecisionExpertiseSection() {
   }, [])
 
   return (
-    <section className="precision-section" ref={sectionRef}>
+    <section className={`precision-section ${className}`} ref={sectionRef}>
       <div className="container precision-shell">
 
         <div className="precision-header">

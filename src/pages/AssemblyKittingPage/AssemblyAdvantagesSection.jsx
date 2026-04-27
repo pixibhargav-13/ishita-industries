@@ -51,7 +51,14 @@ const AssemblyAdvantagesSection = () => {
             ref={(el) => (animRefs.current[1] = el)}
           >
             <div className="advantages-image-wrapper">
-              <img src={advantagesImage} alt="Industrial Facility" className="advantages-img" />
+              <div className="advantages-img-container">
+                <img 
+                  src={advantagesImage} 
+                  alt="Industrial Facility at Ishita Industries" 
+                  className="advantages-img" 
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
         </div>

@@ -5,7 +5,7 @@
   position: relative;
   z-index: 200;
   padding: clamp(0.75rem, 1.5vw, 1.25rem) 0;
-  background: #fafafa;
+  background: #ffffff;
 }
 
 /* Scrolled state — dark compact bar */
@@ -223,8 +223,13 @@
     padding-bottom: 0.65rem;
   }
 
-  .brand-logo--desktop { display: none; }
-  .brand-logo--mobile  { display: block; }
+  .brand-logo--desktop {
+    display: none;
+  }
+
+  .brand-logo--mobile {
+    display: block;
+  }
 
   .nav-shell {
     align-items: center;

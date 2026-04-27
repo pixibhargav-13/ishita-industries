@@ -1,7 +1,7 @@
 /* ─── Generic Service Hero Section ────────────────────────── */
 
 .service-hero {
-  background-color: #FFFFFF;
+  background-color: #F9F9F9;
   padding: clamp(3rem, 5.5vw, 4.9rem) 0 0;
 }
 
