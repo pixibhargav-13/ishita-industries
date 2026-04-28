@@ -4,7 +4,8 @@
 }
 
 .capabilities-shell {
-  max-width: 1150px;
+  max-width: 1210px;
+  margin: 0 auto;
   padding-inline: clamp(0.85rem, 2.8vw, 1.5rem);
 }
 

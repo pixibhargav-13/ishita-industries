@@ -7,7 +7,7 @@
 .strategic-shell {
   max-width: 1210px;
   margin: 0 auto;
-  padding-inline: clamp(1rem, 3vw, 2rem);
+  padding-inline: clamp(0.85rem, 2.8vw, 1.5rem);
 }
 
 .strategic-title {
@@ -54,7 +54,7 @@
 .spread-shell {
   max-width: 1210px;
   margin: 0 auto;
-  padding-inline: clamp(1rem, 3vw, 2rem);
+  padding-inline: clamp(0.85rem, 2.8vw, 1.5rem);
   text-align: center;
   padding-top: clamp(0.5rem, 1vw, 1rem);
 }
@@ -95,74 +95,20 @@
   color: #222222;
   margin: 0 auto;
 }
-@media (min-width: 576px) {
-  .strategic-shell {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .strategic-shell {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .strategic-shell {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .strategic-shell {
-    max-width: 1140px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .strategic-shell {
-    max-width: 1320px;
-  }
-}
-
 @media (max-width: 1600px) and (min-width: 1465px) {
-  .strategic-shell {
+  .strategic-shell, .spread-shell {
     max-width: 1325px;
   }
 }
 
-@media (min-width: 576px) {
-  .spread-shell {
-    max-width: 540px;
+@media (max-width: 1465px) and (min-width: 1400px) {
+  .strategic-shell, .spread-shell {
+    max-width: 1260px;
   }
 }
 
-@media (min-width: 768px) {
-  .spread-shell {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .spread-shell {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .spread-shell {
-    max-width: 1140px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .spread-shell {
-    max-width: 1320px;
-  }
-}
-
-@media (max-width: 1600px) and (min-width: 1465px) {
-  .spread-shell {
-    max-width: 1325px;
+@media (min-width: 1600px) {
+  .strategic-shell, .spread-shell {
+    max-width: 1520px;
   }
 }

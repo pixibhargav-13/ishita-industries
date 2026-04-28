@@ -2,13 +2,13 @@
 .environment-content-section {
   padding: clamp(3rem, 5.5vw, 4.9rem) 0 clamp(3rem, 5.2vw, 4.6rem);
   /* Reduced top/bottom padding */
-  background-color: #FAFAFA;
+  background-color: #F9F9F9;
   /* Light off-white background like the image */
 }
 
 .environment-content-shell {
   max-width: 1210px;
-  padding-inline: clamp(1rem, 2.5vw, 1.5rem);
+  padding-inline: clamp(0.85rem, 2.8vw, 1.5rem);
   margin: 0 auto;
 }
 
@@ -147,38 +147,20 @@
 }
 
 /* ── Container Responsive Resizing ───────────────────────── */
-@media (min-width: 576px) {
-  .container.environment-content-shell {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container.environment-content-shell {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container.environment-content-shell {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container.environment-content-shell {
-    max-width: 1140px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .container.environment-content-shell {
-    max-width: 1320px;
-  }
-}
-
 @media (max-width: 1600px) and (min-width: 1465px) {
   .container.environment-content-shell {
     max-width: 1325px;
+  }
+}
+
+@media (max-width: 1465px) and (min-width: 1400px) {
+  .container.environment-content-shell {
+    max-width: 1260px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container.environment-content-shell {
+    max-width: 1520px;
   }
 }

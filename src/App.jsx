@@ -12,6 +12,7 @@ import GlobalLogisticPage from './pages/GlobalLogisticPage/GlobalLogisticPage'
 import CustomPackagingPage from './pages/CustomPackagingPage/CustomPackagingPage'
 import AssemblyKittingPage from './pages/AssemblyKittingPage/AssemblyKittingPage'
 import ManufacturingProcessPage from './pages/ManufacturingProcessPage/ManufacturingProcessPage'
+import BlogPage from './pages/BlogPage/BlogPage'
 import ScrollProgressBar from './components/ScrollProgressBar/ScrollProgressBar'
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         <Route path="/custom-packaging" element={<CustomPackagingPage />} />
         <Route path="/assembly-kitting" element={<AssemblyKittingPage />} />
         <Route path="/manufacturing-process" element={<ManufacturingProcessPage />} />
+        <Route path="/blog" element={<BlogPage />} />
       </Routes>
     </>
   )

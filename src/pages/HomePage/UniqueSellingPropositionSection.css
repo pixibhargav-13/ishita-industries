@@ -5,7 +5,8 @@
 
 .usp-shell {
   max-width: 1210px;
-  padding-inline: clamp(0.9rem, 2.9vw, 1.65rem);
+  margin: 0 auto;
+  padding-inline: clamp(0.85rem, 2.8vw, 1.5rem);
 }
 
 .usp-header {
@@ -389,6 +390,12 @@
 @media (max-width: 1465px) and (min-width: 1400px) {
   .usp-shell {
     max-width: 1260px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .usp-shell {
+    max-width: 1520px;
   }
 }
 

@@ -5,9 +5,9 @@
 }
 
 .contact-hero-container {
-  max-width: 1200px;
+  max-width: 1210px;
   margin: 0 auto;
-  padding-inline: clamp(1rem, 3vw, 2rem);
+  padding-inline: clamp(0.85rem, 2.8vw, 1.5rem);
 }
 
 .contact-hero-title {
@@ -37,15 +37,9 @@
   margin-top: clamp(1.25rem, 2.5vw, 2.25rem);
 }
 
-@media (min-width: 576px) {
+@media (max-width: 1600px) and (min-width: 1465px) {
   .contact-hero-container {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .contact-hero-container {
-    max-width: 720px;
+    max-width: 1325px;
   }
 }
 
@@ -63,12 +57,12 @@
 
 @media (min-width: 1400px) {
   .contact-hero-container {
-    max-width: 1320px;
+    max-width: 1260px;
   }
 }
 
-@media (max-width: 1600px) and (min-width: 1465px) {
+@media (min-width: 1600px) {
   .contact-hero-container {
-    max-width: 1325px;
+    max-width: 1520px;
   }
 }

@@ -5,10 +5,16 @@
   position: relative;
   z-index: 200;
   padding: clamp(0.75rem, 1.5vw, 1.25rem) 0;
-  background: #ffffff;
+  background: #FAFAFA;
 }
 
 /* Scrolled state — dark compact bar */
+.site-header.theme-white {
+  background: #FFFFFF;
+}
+.site-header.theme-f9 {
+  background: #F9F9F9;
+}
 
 /* ─── Transparent Theme (for Import/Export Page) ─── */
 .site-header.theme-transparent {

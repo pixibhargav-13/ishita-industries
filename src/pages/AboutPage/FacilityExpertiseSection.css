@@ -1,6 +1,12 @@
 .facility-expertise-section {
-  padding: 80px 0;
+  padding: clamp(3rem, 5.5vw, 4.9rem) 0 clamp(3rem, 5.2vw, 4.6rem);
   background-color: #f9f9f9;
+}
+
+.facility-expertise-section .container {
+  max-width: 1210px;
+  margin: 0 auto;
+  padding-inline: clamp(0.85rem, 2.8vw, 1.5rem);
 }
 
 .facility-main-kicker {
@@ -260,7 +266,7 @@
 
 .finish-badge {
   background: #ffffff;
-  padding:7px;
+  padding: 7px;
   text-align: center;
   font-size: 15px;
   color: #2D3435;
@@ -271,7 +277,7 @@
 /* ─── ISO Card ──────────────────────────────────────────── */
 .facility-iso-card {
   position: relative;
-  height: 120px;
+  height: 145px;
   overflow: hidden;
   border-radius: 4px;
 }
@@ -497,5 +503,23 @@
 
   .metal-name {
     font-size: 24px;
+  }
+}
+
+@media (max-width: 1600px) and (min-width: 1465px) {
+  .facility-expertise-section .container {
+    max-width: 1325px;
+  }
+}
+
+@media (max-width: 1465px) and (min-width: 1400px) {
+  .facility-expertise-section .container {
+    max-width: 1260px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .facility-expertise-section .container {
+    max-width: 1520px;
   }
 }

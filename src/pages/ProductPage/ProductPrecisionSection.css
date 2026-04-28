@@ -118,38 +118,20 @@
   }
 }
 
-@media (min-width: 576px) {
-  .product-precision-shell {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .product-precision-shell {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .product-precision-shell {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .product-precision-shell {
-    max-width: 1140px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .product-precision-shell {
-    max-width: 1320px;
-  }
-}
-
 @media (max-width: 1600px) and (min-width: 1465px) {
   .product-precision-shell {
     max-width: 1325px;
+  }
+}
+
+@media (max-width: 1465px) and (min-width: 1400px) {
+  .product-precision-shell {
+    max-width: 1260px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .product-precision-shell {
+    max-width: 1520px;
   }
 }

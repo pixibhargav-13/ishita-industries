@@ -4,8 +4,9 @@
 }
 
 .sust-env-shell {
+  max-width: 1210px;
   margin: 0 auto;
-  padding-inline: clamp(1rem, 2.5vw, 1.5rem);
+  padding-inline: clamp(0.85rem, 2.8vw, 1.5rem);
 }
 
 /* Header */
@@ -232,5 +233,22 @@
 
   .sust-env-card-energy {
     grid-column: 1;
+  }
+}
+@media (max-width: 1600px) and (min-width: 1465px) {
+  .sust-env-shell {
+    max-width: 1325px;
+  }
+}
+
+@media (max-width: 1465px) and (min-width: 1400px) {
+  .sust-env-shell {
+    max-width: 1260px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .sust-env-shell {
+    max-width: 1520px;
   }
 }

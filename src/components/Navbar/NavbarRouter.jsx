@@ -12,11 +12,6 @@ const navLinks = [
   { label: 'About', to: '/about' },
   { label: 'Product', to: '/product' },
   { label: 'Quality', to: '/quality' },
-  { label: 'Environment', to: '/environment' },
-  { label: 'Import/Export', to: '/import-export' },
-  { label: 'Sustainability', to: '/sustainability' },
-  { label: 'Manufacturing', to: '/manufacturing-process' },
-  { label: 'Contact', to: '/contact' },
 ]
 
 function NavbarRouter() {
@@ -24,6 +19,14 @@ function NavbarRouter() {
   const [isScrolled, setIsScrolled] = useState(false)
   const location = useLocation()
   const isImportExport = location.pathname === '/import-export'
+  const isProductPage = location.pathname === '/product'
+  const isQualityPage = location.pathname === '/quality'
+  const isLogisticPage = location.pathname === '/global-logistic'
+  const isPackagingPage = location.pathname === '/custom-packaging'
+  const isAssemblyPage = location.pathname === '/assembly-kitting'
+  const isEnvironmentPage = location.pathname === '/environment'
+  const isContactPage = location.pathname === '/contact'
+  const isProductInnerPage = location.pathname.startsWith('/product/')
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,7 +40,7 @@ function NavbarRouter() {
   const handleNavClick = () => setIsOpen(false)
 
   return (
-    <header className={`site-header${isScrolled ? ' scrolled' : ''}${isImportExport ? ' theme-transparent' : ''}`}>
+    <header className={`site-header${isScrolled ? ' scrolled' : ''}${isImportExport ? ' theme-transparent' : ''}${isProductPage || isProductInnerPage ? ' theme-white' : ''}${isQualityPage || isLogisticPage || isPackagingPage || isAssemblyPage || isEnvironmentPage || isContactPage ? ' theme-f9' : ''}`}>
       <nav className="navbar navbar-expand-lg p-0">
         <div className="container nav-shell">
           <NavLink

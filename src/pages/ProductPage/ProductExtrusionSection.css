@@ -37,7 +37,7 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: clamp(1rem, 1.5vw, 1.15rem);
-  margin-top: clamp(1.9rem, 2.8vw, 2.35rem);
+  margin-top: clamp(2.5rem, 3.5vw, 3.5rem);
 }
 
 .product-extrusion-card {
@@ -117,38 +117,20 @@
   }
 }
 
-@media (min-width: 576px) {
-  .product-extrusion-shell {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .product-extrusion-shell {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .product-extrusion-shell {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .product-extrusion-shell {
-    max-width: 1140px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .product-extrusion-shell {
-    max-width: 1320px;
-  }
-}
-
 @media (max-width: 1600px) and (min-width: 1465px) {
   .product-extrusion-shell {
     max-width: 1325px;
+  }
+}
+
+@media (max-width: 1465px) and (min-width: 1400px) {
+  .product-extrusion-shell {
+    max-width: 1260px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .product-extrusion-shell {
+    max-width: 1520px;
   }
 }

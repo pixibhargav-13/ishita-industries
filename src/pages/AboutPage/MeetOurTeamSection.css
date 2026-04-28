@@ -5,7 +5,8 @@
 
 .meet-team-shell {
   max-width: 1210px;
-  padding-inline: clamp(0.95rem, 2.8vw, 1.55rem);
+  margin: 0 auto;
+  padding-inline: clamp(0.85rem, 2.8vw, 1.5rem);
 }
 
 .meet-team-header {
@@ -127,7 +128,7 @@
 }
 
 @media (max-width: 1600px) and (min-width: 1465px) {
-  .meet-team-shell{
+  .meet-team-shell {
     max-width: 1325px;
   }
 }
@@ -135,6 +136,12 @@
 @media (max-width: 1465px) and (min-width: 1400px) {
   .meet-team-shell {
     max-width: 1260px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .meet-team-shell {
+    max-width: 1520px;
   }
 }
 

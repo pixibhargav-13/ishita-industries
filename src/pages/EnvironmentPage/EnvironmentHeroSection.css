@@ -6,7 +6,7 @@
 
 .environment-hero-shell {
   max-width: 1210px;
-  padding-inline: clamp(1rem, 2.5vw, 1.5rem);
+  padding-inline: clamp(0.85rem, 2.8vw, 1.5rem);
   margin: 0 auto;
 }
 
@@ -39,7 +39,6 @@
 
 .environment-hero-title {
   margin-top: clamp(1.2rem, 2.5vw, 2rem);
-  ;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -187,39 +186,21 @@
 }
 
 /* ─── Responsive Container ──────────────────────────────── */
-@media (min-width: 576px) {
-  .container.environment-hero-shell {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container.environment-hero-shell {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container.environment-hero-shell {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container.environment-hero-shell {
-    max-width: 1140px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .container.environment-hero-shell {
-    max-width: 1320px;
-  }
-}
-
 @media (max-width: 1600px) and (min-width: 1465px) {
   .container.environment-hero-shell {
     max-width: 1325px;
+  }
+}
+
+@media (max-width: 1465px) and (min-width: 1400px) {
+  .container.environment-hero-shell {
+    max-width: 1260px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container.environment-hero-shell {
+    max-width: 1520px;
   }
 }
 
