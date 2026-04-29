@@ -438,8 +438,21 @@
     min-height: auto;
   }
 
-  .cap-card-visual {
-    min-height: 260px;
+  .cap-card-machining {
+    padding: 1.5rem;
+  }
+
+  .cap-card-metals,
+  .cap-card-finishing {
+    padding: 2rem 1.5rem;
+  }
+
+  .cap-card-finishing {
+    padding-bottom: 0;
+  }
+
+  .cap-visual-overlay {
+    padding: 1.5rem;
   }
 
   .cap-stats-grid {
@@ -450,6 +463,10 @@
 
   .cap-visual-title {
     font-size: 1.5rem;
+  }
+
+  .process-undertake-wrapper {
+    padding: 1.5rem;
   }
 }
 
