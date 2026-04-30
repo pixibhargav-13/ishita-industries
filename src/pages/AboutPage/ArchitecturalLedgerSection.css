@@ -27,7 +27,7 @@
   line-height: 1.2;
   letter-spacing: 0.2em;
   color: #797d83;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   font-family: "Inter", sans-serif;
 }
@@ -40,10 +40,14 @@
   line-height: 1.188;
   letter-spacing: -0.066em;
   color: #2d3435;
+  text-align: left;
+}
+
+.ledger-header .ledger-kicker,
+.ledger-header .ledger-title {
   text-align: center;
 }
 
-/* Left-align kicker/title inside the Capabilities section */
 .caps-header .ledger-kicker,
 .caps-header .ledger-title {
   text-align: left;
