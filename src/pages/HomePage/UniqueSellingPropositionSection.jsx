@@ -1,88 +1,14 @@
 import { useEffect, useRef } from 'react'
+import { useTranslation } from 'react-i18next'
 import './UniqueSellingPropositionSection.css'
 
 const uspItems = [
-  {
-    id: '01',
-    title: 'Material Integrity',
-    description: (
-      <>
-        Precision Machined <br />
-        Ferrous &amp; Non-Ferrous <br />
-        Components with Full <br />
-        Material Traceability.
-      </>
-    ),
-    shortLabel: 'Material Integrity',
-    featureClass: 'usp-feature-material',
-    icon: 'integrity',
-  },
-  {
-    id: '02',
-    title: 'Precision Engineering',
-    description: (
-      <>
-        Advanced CNC &amp; VMC <br />
-        Machining of Ferrous &amp; Non- <br />
-        Ferrous Metal Components.
-      </>
-    ),
-    shortLabel: 'Precision Engineering',
-    featureClass: 'usp-feature-engineering',
-    icon: 'engineering',
-  },
-  {
-    id: '03',
-    title: 'Fast RFQ Response',
-    description: (
-      <>
-        Upload Drawing --Get <br />
-        Quote in 24 Hours
-      </>
-    ),
-    shortLabel: 'Fast RFQ Response',
-    featureClass: 'usp-feature-rfq',
-    icon: 'rfq',
-  },
-  {
-    id: '04',
-    title: 'Strict Quality Vaidation',
-    description: (
-      <>
-        Multi-Stage Quality Inspection <br />
-        for Consistent Precision.
-      </>
-    ),
-    shortLabel: 'Strict Quality Validation',
-    featureClass: 'usp-feature-quality',
-    icon: 'quality',
-  },
-  {
-    id: '05',
-    title: 'Custom OEM Manufacturing',
-    description: (
-      <>
-        Precision Components Manufactured <br />
-        to Your Drawings &amp; Specifications.
-      </>
-    ),
-    shortLabel: 'Custom OEM Manufacturing',
-    featureClass: 'usp-feature-oem',
-    icon: 'oem',
-  },
-  {
-    id: '06',
-    title: 'Long-Term Partnership',
-    description: (
-      <>
-        Flexible Manufacturing from <br />
-        Prototype to Mass Production.
-      </>
-    ),
-    shortLabel: 'Long-Term Partnership',
-    featureClass: 'usp-feature-partnership',
-    icon: 'partnership',
-  },
+  { id: '01', titleKey: 'usp.card1_title', descKey: 'usp.card1_desc', featureClass: 'usp-feature-material',    icon: 'integrity'   },
+  { id: '02', titleKey: 'usp.card2_title', descKey: 'usp.card2_desc', featureClass: 'usp-feature-engineering', icon: 'engineering' },
+  { id: '03', titleKey: 'usp.card3_title', descKey: 'usp.card3_desc', featureClass: 'usp-feature-rfq',         icon: 'rfq'         },
+  { id: '04', titleKey: 'usp.card4_title', descKey: 'usp.card4_desc', featureClass: 'usp-feature-quality',     icon: 'quality'     },
+  { id: '05', titleKey: 'usp.card5_title', descKey: 'usp.card5_desc', featureClass: 'usp-feature-oem',         icon: 'oem'         },
+  { id: '06', titleKey: 'usp.card6_title', descKey: 'usp.card6_desc', featureClass: 'usp-feature-partnership', icon: 'partnership' },
 ]
 
 function Icon({ type }) {
@@ -124,17 +50,17 @@ function Icon({ type }) {
       </svg>
     ),
   }
-
   return <span className="usp-icon">{icons[type]}</span>
 }
 
 function UniqueSellingPropositionSection() {
-  const sectionRef = useRef(null)
+  const { t } = useTranslation()
+  const sectionRef  = useRef(null)
   const showcaseRef = useRef(null)
 
   useEffect(() => {
     const showcase = showcaseRef.current
-    const section = sectionRef.current
+    const section  = sectionRef.current
     if (!showcase || !section) return
 
     const observer = new IntersectionObserver(
@@ -146,12 +72,8 @@ function UniqueSellingPropositionSection() {
           }
         })
       },
-      {
-        threshold: 0.25,
-        rootMargin: '0px 0px -80px 0px',
-      }
+      { threshold: 0.25, rootMargin: '0px 0px -80px 0px' }
     )
-
     observer.observe(showcase)
     return () => observer.disconnect()
   }, [])
@@ -161,10 +83,8 @@ function UniqueSellingPropositionSection() {
       <div className="container usp-shell">
         <div className="usp-header">
           <div>
-            <p className="usp-kicker mb-0">WHAT SETS US APART</p>
-            <h2 className="usp-title mb-0">
-              UNIQUE SELLING PROPOSITION.
-            </h2>
+            <p className="usp-kicker mb-0">{t('usp.kicker')}</p>
+            <h2 className="usp-title mb-0">{t('usp.title')}</h2>
           </div>
         </div>
 
@@ -173,10 +93,9 @@ function UniqueSellingPropositionSection() {
             {uspItems.map((item, index) => (
               <div key={item.id} className={`usp-fan-card usp-fan-card-${index + 1}`}>
                 <span className="usp-fan-index">{item.id}</span>
-                <span className="usp-fan-label">{item.shortLabel}</span>
+                <span className="usp-fan-label">{t(item.titleKey)}</span>
               </div>
             ))}
-
             <div className="usp-center-disc">
               <p className="mb-0">UNIQUE</p>
               <h3 className="mb-0">SELLING</h3>
@@ -187,8 +106,8 @@ function UniqueSellingPropositionSection() {
           {uspItems.map((item) => (
             <article key={`${item.id}-feature`} className={`usp-feature ${item.featureClass}`}>
               <div className="usp-feature-text-content">
-                <h3 className="usp-feature-title mb-0">{item.title}</h3>
-                <p className="usp-feature-copy mb-0">{item.description}</p>
+                <h3 className="usp-feature-title mb-0">{t(item.titleKey)}</h3>
+                <p className="usp-feature-copy mb-0">{t(item.descKey)}</p>
               </div>
               <Icon type={item.icon} />
             </article>
@@ -200,4 +119,3 @@ function UniqueSellingPropositionSection() {
 }
 
 export default UniqueSellingPropositionSection
-

@@ -1,4 +1,5 @@
 import { useRef } from 'react'
+import { useTranslation } from 'react-i18next'
 import './KnowledgeHubSection.css'
 import blogImg from '../../Images/blog_image.png'
 import { Link } from 'react-router-dom'
@@ -29,26 +30,24 @@ const latestPosts = [
 ]
 
 function KnowledgeHubSection() {
+  const { t } = useTranslation()
   const animRefs = useRef([])
   useScrollAnimation(animRefs)
 
   return (
     <section className="knowledge-hub-section">
       <div className="container hub-shell">
-        <div 
-          className="hub-header text-center"
-          ref={(el) => (animRefs.current[0] = el)}
-        >
+        <div className="hub-header text-center" ref={(el) => (animRefs.current[0] = el)}>
           <div>
-            <p className="hub-kicker mb-0">KNOWLEDGE HUB</p>
-            <h2 className="hub-title mb-0">LATEST INSIGHTS.</h2>
+            <p className="hub-kicker mb-0">{t('knowledge_hub.kicker')}</p>
+            <h2 className="hub-title mb-0">{t('knowledge_hub.title')}</h2>
           </div>
         </div>
 
         <div className="hub-grid">
           {latestPosts.map((post, index) => (
-            <div 
-              key={post.id} 
+            <div
+              key={post.id}
               className="hub-card"
               ref={(el) => (animRefs.current[1 + index] = el)}
               style={{ transitionDelay: `${index * 120}ms` }}
@@ -58,11 +57,11 @@ function KnowledgeHubSection() {
               </div>
               <div className="hub-card-content">
                 <div className="hub-card-meta">
-                  <span className="hub-author">By {post.author}</span>
+                  <span className="hub-author">{t('knowledge_hub.by')} {post.author}</span>
                   <span className="hub-date">{post.date}</span>
                 </div>
                 <h3 className="hub-card-title">{post.title}</h3>
-                <Link to="/blog" className="hub-read-more">Read More</Link>
+                <Link to="/blog" className="hub-read-more">{t('knowledge_hub.read_more')}</Link>
               </div>
             </div>
           ))}

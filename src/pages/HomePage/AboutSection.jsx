@@ -1,55 +1,41 @@
 import { useRef } from 'react'
+import { useTranslation } from 'react-i18next'
 import './AboutSection.css'
 import useScrollAnimation from '../../hooks/useScrollAnimation'
 import useCurtainReveal from '../../hooks/useCurtainReveal'
 
-const aboutHighlights = [
-  'ISO Certified Manufacturing SET-UP',
-  '34+ Years Engineering Exp.',
-  'Exporting to Europe, USA, Canada & Saudi Arabia',
-  'Custom OEM Manufacturing',
-  'Upload Drawing - Get Quote in 24 Hours',
-]
-
 function AboutSection() {
-  // GSAP curtain reveal on the section heading
+  const { t } = useTranslation()
   const titleRef = useCurtainReveal({ stagger: 0.06, duration: 0.95 })
-
-  // Scroll reveal for header block, body text, highlight cards
-  // Index map: [0] = header, [1] = body, [2..6] = highlight cards
   const animRefs = useRef([])
   useScrollAnimation(animRefs)
+
+  const highlights = [
+    t('home_about.badge1'),
+    t('home_about.badge2'),
+    t('home_about.badge3'),
+    t('home_about.badge4'),
+    t('home_about.cta'),
+  ]
 
   return (
     <section className="about-section">
       <div className="container about-shell">
-
-        <div
-          className="about-header"
-          ref={(el) => (animRefs.current[0] = el)}
-        >
+        <div className="about-header" ref={(el) => (animRefs.current[0] = el)}>
           <div className="about-header-main">
-            <p className="about-kicker mb-0">OUR STORY BEGINS HERE SINCE 1944</p>
-            <h2 className="about-title mb-0" ref={titleRef}>ABOUT ISHITA INDUSTRIES.</h2>
+            <p className="about-kicker mb-0">{t('home_about.kicker')}</p>
+            <h2 className="about-title mb-0" ref={titleRef}>{t('home_about.title')}</h2>
           </div>
         </div>
 
-        <p
-          className="about-body mb-0"
-          ref={(el) => (animRefs.current[1] = el)}
-        >
-          Founded in Jamnagar the Brass City of India&apos; Ishita Industries has evolved from a local
-          workshop into a global leader in custom brass component manufacturing. We don&apos;t just
-          machine parts; we engineer reliability. Built on a foundation of strict quality control,
-          we now serve international markets across Electrical, Automotive, and Industrial sectors.
-          We bridge the gap between Indian manufacturing cost-efficiency and German-standard
-          precision.
+        <p className="about-body mb-0" ref={(el) => (animRefs.current[1] = el)}>
+          {t('home_about.desc')}
         </p>
 
         <div className="about-highlights" aria-label="Company highlights">
-          {aboutHighlights.map((highlight, index) => (
+          {highlights.map((highlight, index) => (
             <div
-              key={highlight}
+              key={index}
               className="about-highlight-card"
               ref={(el) => (animRefs.current[2 + index] = el)}
               style={{ transitionDelay: `${index * 80}ms` }}
@@ -58,7 +44,6 @@ function AboutSection() {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   )
