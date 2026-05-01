@@ -84,50 +84,57 @@
 }
 
 .nav-dropdown {
-  display: none;
   position: absolute;
-  top: calc(100% + 0.5rem);
+  top: calc(100% + 0.25rem);
   left: 50%;
   transform: translateX(-50%);
   background: #fff;
-  border: 1px solid #e2e2e5;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+  border: 1px solid #e6e6ea;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.04), 0 12px 32px rgba(0,0,0,0.10), 0 2px 8px rgba(0,0,0,0.06);
   padding: 0.5rem 0;
   list-style: none;
   margin: 0;
-  min-width: 200px;
+  min-width: 210px;
   z-index: 300;
-  border-radius: 4px;
+  border-radius: 6px;
+  pointer-events: none;
+  clip-path: inset(0 0 100% 0 round 6px);
+  transition: clip-path 0.55s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* hover bridge — fills the gap so cursor can travel from nav link to dropdown */
 .nav-dropdown::before {
   content: '';
   position: absolute;
-  top: -0.5rem;
-  left: 0;
-  right: 0;
-  height: 0.5rem;
+  top: -1.5rem;
+  left: -1rem;
+  right: -1rem;
+  height: 1.5rem;
   background: transparent;
 }
 
 .has-dropdown:hover .nav-dropdown {
-  display: block;
+  pointer-events: auto;
+  clip-path: inset(0 0 0% 0 round 6px);
 }
 
 .nav-dropdown li a {
   display: block;
-  padding: 0.5rem 1.2rem;
+  padding: 0.52rem 1.25rem 0.52rem 1rem;
   font-family: 'Kantumruy', sans-serif;
   font-size: 0.9rem;
   color: #343434;
   text-decoration: none;
   white-space: nowrap;
-  transition: background 0.15s ease, color 0.15s ease;
+  border-left: 2px solid transparent;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease, padding-left 0.15s ease;
 }
 
 .nav-dropdown li a:hover {
-  background: #f5f5f5;
+  background: #f7f7f9;
   color: #111;
+  border-left-color: #888;
+  padding-left: 1.3rem;
 }
 
 @media (max-width: 991.98px) {
