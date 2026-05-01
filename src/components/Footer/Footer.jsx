@@ -120,9 +120,9 @@ function Footer() {
               </div>
             </div>
             <div className="footer-emails">
-              <p>For Domestic :- <a href="mailto:sales@ishitabrass.com">sales@ishitabrass.com</a></p>
-              <p>For Export :- <a href="mailto:export@ishitabrass.com">export@ishitabrass.com</a></p>
-              <p>For General :- <a href="mailto:info@ishitabrass.com">info@ishitabrass.com</a></p>
+              <p>For Domestic :- <a href="mailto:rfq@ishitabrass.com">rfq@ishitabrass.com</a></p>
+              <p>For Export :- <a href="mailto:rfq@ishitabrass.com">rfq@ishitabrass.com</a></p>
+              <p>For General :- <a href="mailto:rfq@ishitabrass.com">rfq@ishitabrass.com</a></p>
             </div>
             <div className="footer-socials">
               <a href="#" aria-label="LinkedIn" className="social-icon">

@@ -249,7 +249,7 @@
 
 .usp-section.is-visible .usp-fan-card-6 {
   opacity: 1;
-  transform: translate(-65%, -97%) rotate(135deg);
+  transform: translate(-60%, -95%) rotate(135deg);
 }
 
 
@@ -512,32 +512,32 @@
   /* Fan out — same pure-rotate approach as desktop */
   .usp-section.is-visible .usp-fan-card-1 {
     opacity: 1;
-    transform: translate(-50%, -100%) rotate(-60deg);
+    transform: translate(-50%, -100%) rotate(-70deg);
   }
 
   .usp-section.is-visible .usp-fan-card-2 {
     opacity: 1;
-    transform: translate(-50%, -100%) rotate(-30deg);
+    transform: translate(-50%, -96%) rotate(-30deg);
   }
 
   .usp-section.is-visible .usp-fan-card-3 {
     opacity: 1;
-    transform: translate(-50%, -100%) rotate(0deg);
+    transform: translate(-50%, -93%) rotate(10deg);
   }
 
   .usp-section.is-visible .usp-fan-card-4 {
     opacity: 1;
-    transform: translate(-50%, -100%) rotate(30deg);
+    transform: translate(-50%, -90%) rotate(50deg);
   }
 
   .usp-section.is-visible .usp-fan-card-5 {
     opacity: 1;
-    transform: translate(-50%, -100%) rotate(60deg);
+    transform: translate(-57%, -87%) rotate(90deg);
   }
 
   .usp-section.is-visible .usp-fan-card-6 {
     opacity: 1;
-    transform: translate(-50%, -100%) rotate(90deg);
+    transform: translate(-60%, -95%) rotate(135deg);
   }
 
   /* Feature items */
