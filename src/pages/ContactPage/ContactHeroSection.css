@@ -19,6 +19,8 @@
   vertical-align: middle;
   color: #343434;
   max-width: 800px;
+  word-break: keep-all;
+  overflow-wrap: normal;
 }
 
 .contact-hero-highlight {

@@ -86,11 +86,26 @@ const ContactInfoSection = () => {
             </div>
             <h3 className="info-title">E-mail</h3>
             <ul className="info-list">
-              <li>sales@ishitabrass.com <span>(Domestic Sales)</span></li>
-              <li>Export@ishitabrass.com <span>(International Sales)</span></li>
-              <li>Import@ishitabrass.com <span>(Raw Material / Brass)</span></li>
-              <li>Info@ishitabrass.com <span>(Other / General)</span></li>
-              <li>contact@ishitabrass.com <span>(Contact / General)</span></li>
+              <li>
+                <a href="mailto:sales@ishitabrass.com" className="info-link">sales@ishitabrass.com</a> 
+                <span>(Domestic Sales)</span>
+              </li>
+              <li>
+                <a href="mailto:Export@ishitabrass.com" className="info-link">Export@ishitabrass.com</a> 
+                <span>(International Sales)</span>
+              </li>
+              <li>
+                <a href="mailto:Import@ishitabrass.com" className="info-link">Import@ishitabrass.com</a> 
+                <span>(Raw Material / Brass)</span>
+              </li>
+              <li>
+                <a href="mailto:Info@ishitabrass.com" className="info-link">Info@ishitabrass.com</a> 
+                <span>(Other / General)</span>
+              </li>
+              <li>
+                <a href="mailto:contact@ishitabrass.com" className="info-link">contact@ishitabrass.com</a> 
+                <span>(Contact / General)</span>
+              </li>
             </ul>
           </div>
 
@@ -107,7 +122,14 @@ const ContactInfoSection = () => {
               </div>
               <h3 className="info-title">Address</h3>
               <p className="info-text">
-                Plot No – 32, R.S No – 706, Vision Industrial Park, Lalpur Road, Changa, Jamnagar – 361012, Gujarat, India.
+                <a 
+                  href="https://www.google.com/maps/search/?api=1&query=Ishita+Industries+Vision+Industrial+Park+Jamnagar" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="info-link"
+                >
+                  Plot No – 32, R.S No – 706, Vision Industrial Park, Lalpur Road, Changa, Jamnagar – 361012, Gujarat, India.
+                </a>
               </p>
             </div>
 
@@ -120,8 +142,8 @@ const ContactInfoSection = () => {
               </div>
               <h3 className="info-title">Contact</h3>
               <p className="info-text">
-                +91 932 799 2077<br />
-                +91 982 569 2077
+                <a href="tel:+919327992077" className="info-link">+91 932 799 2077</a><br />
+                <a href="tel:+919825692077" className="info-link">+91 982 569 2077</a>
               </p>
             </div>
 

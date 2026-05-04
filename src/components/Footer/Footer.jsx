@@ -94,7 +94,7 @@ function Footer() {
             <div className="footer-logo">
               <img src={companyLogo} alt="Ishita Industries" />
             </div>
-            <a href="https://www.google.com/maps/search/Plot+No.+32,+R.+S.+no.+706,+Vision+Industrial+Park+Lalpur+Road,+changa+Jamnagar,+Gujarat+361012+INDIA" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <a href="https://maps.app.goo.gl/rBVQmQ9ziWnut9vu5" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
               <address className="footer-address">
                 Plot No. 32, R. S. no. 706, Vision Industrial
                 Park Lalpur Road, changa Jamnagar,
@@ -152,7 +152,7 @@ function Footer() {
             <div className="footer-logo">
               <img src={companyLogo} alt="Ishita Industries" />
             </div>
-            <a href="https://www.google.com/maps/search/Plot+No.+32,+R.+S.+no.+706,+Vision+Industrial+Park+Lalpur+Road,+changa+Jamnagar,+Gujarat+361012+INDIA" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <a href="https://maps.app.goo.gl/rBVQmQ9ziWnut9vu5" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
               <address className="footer-address">
                 Plot No. 32, R. S. no. 706, Vision Industrial
                 Park Lalpur Road, changa Jamnagar,

@@ -86,6 +86,17 @@
   margin: 0;
 }
 
+.info-link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.info-link:hover {
+  color: #343434;
+  text-decoration: none;
+}
+
 @media (max-width: 768px) {
   .contact-cards-wrapper {
     flex-direction: column;
