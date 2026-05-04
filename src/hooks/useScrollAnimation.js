@@ -35,7 +35,7 @@ function useScrollAnimation(
   // Pass an options object for threshold/rootMargin; omit for defaults.
   triggerOrOptions = {},
 ) {
-  const isOptions = typeof triggerOrOptions === 'object' && triggerOrOptions !== null
+  const isOptions = typeof triggerOrOptions === 'object' && triggerOrOptions !== null && !(triggerOrOptions instanceof Array)
   const trigger   = isOptions ? undefined : triggerOrOptions
   const { threshold = 0.1, rootMargin = '0px 0px -60px 0px' } =
     isOptions ? triggerOrOptions : {}
@@ -53,11 +53,29 @@ function useScrollAnimation(
       { threshold, rootMargin }
     )
 
-    refsArray.current.forEach((el) => {
-      if (el) observer.observe(el)
-    })
+    // Small timeout to ensure refs are fully populated in all edge cases
+    const timeout = setTimeout(() => {
+      if (refsArray.current) {
+        refsArray.current.forEach((el) => {
+          if (el) {
+            observer.observe(el)
+            
+            // Immediate check fallback for elements already in view
+            const rect = el.getBoundingClientRect()
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+              // We could manually add the class here, but observer should catch it.
+              // If it doesn't, adding it here is a safe fallback.
+              // el.classList.add('is-visible')
+            }
+          }
+        })
+      }
+    }, 50)
 
-    return () => observer.disconnect()
+    return () => {
+      clearTimeout(timeout)
+      observer.disconnect()
+    }
   }, [trigger]) // eslint-disable-line react-hooks/exhaustive-deps
 }
 

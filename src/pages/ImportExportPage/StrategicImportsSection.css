@@ -127,7 +127,9 @@
 }
 
 .strategic-title.is-visible,
+.is-visible .strategic-title,
 .strategic-subtitle.is-visible,
+.is-visible .strategic-subtitle,
 .strategic-map-container.is-visible,
 .strategic-text.is-visible,
 .spread-title.is-visible,
